@@ -1,17 +1,57 @@
-# Welcome to MkDocs
+# Introdução
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Esta documentação fornece uma visão geral da arquitetura do _seer.app_, diretrizes e processos de desenvolvimento e tem como **propósito central** auxiliar na construção de uma aplicação organizada.
 
-## Commands
+---
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Guia de Início Rápido
 
-## Project layout
+Clone o repositório:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+```bash
+https://github.com/SEERDOT/seer.app.git
+```
+
+Acesse o ambiente virtual (venv):
+
+```bash
+source seer_env/bin/activate
+```
+
+Execute o servidor de desenvolvimento:
+
+```bash
+python3 manage.py runserver
+```
+
+Para mais informações, contate alguém para suporte.
+
+---
+
+## Estrutura do Projeto
+
+```
+├── client_app/        # Aplicação Privada [Tenant-Specific] (App)
+├── public_app/        # Diretório da Aplicação Pública (Login/Registro)
+├── seer_app/          # Diretório do Projeto Geral
+├── seer_env/          # Ambiente Virtual com Bibliotecas
+├── README.md/         # Guia básico de inicialização
+├── manage.py          # Ponto de entrada do CLI do Django
+└── requirements.txt   # Dependências do Python
+```
+
+---
+
+## Tecnologias Principais
+
+- **Frontend**: Bootstrap, ApexCharts
+- **Backend**: Django
+- **Banco de Dados**: PostgreSQL
+- **Deploy**: -
+
+---
+
+## Contatos e Recursos
+
+- **Responsável**: [Raphael Suarez](mailto:raphael.suarez@seerdot.com)
+- **Repositório**: [GitHub Link](https://github.com/SEERDOT/seer.app)

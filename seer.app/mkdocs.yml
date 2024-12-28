@@ -1,4 +1,50 @@
 site_name: seer.app docs
 
+nav:
+  - Home: index.md
+
+  - Front-End:
+      - Elementos Base: frontend/base-frontend.md
+      - Componentes: frontend/components-frontend.md
+      - Página Home: frontend/home-frontend.md
+      - Página Login e Registro: frontend/auth-frontend.md
+      - Página Painél: frontend/dashboard-fronted.md
+
+  - Back-End:
+      - Configurações: backend/settings.md
+      - API: backend/api.md
+      - Bibliotecas: backend/utils.md
+      - Autenticação: backend/auth-backend.md
+
+  - Banco de Dados: 
+      - Esquema e Relações: db/schemas.md
+      - Modelos: db/models.md
+
+  - Testes: testing.md
+
+  - Deploy: deployment.md
+
+  - DevOps: devops.md
+
 theme:
   name: material
+  language: pt-BR
+  palette:
+    scheme: default
+    primary: teal
+    accent: lime
+  font:
+    text: 'Exo 2'
+    code: 'Fira Code'
+  favicon: images/favicon.png
+  logo: images/logo.png 
+  
+
+  features:
+    - navigation.expand
+    - navigation.sections
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - css/extra.css

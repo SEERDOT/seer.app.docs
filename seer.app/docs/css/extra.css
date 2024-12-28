@@ -1,0 +1,31 @@
+/* Change the header background color */
+.md-header {
+  background-color: #272d2d; /* Dark gray color */
+}
+
+/* Optional: Change header text and icon colors */
+.md-header__title,
+.md-header__button,
+.md-header__icon {
+  color: #ffffff; /* White text for contrast */
+}
+
+/* Optional: Adjust logo styling */
+.md-header__logo {
+  filter: brightness(0) invert(1); /* Ensure logos with dark colors are visible */
+}
+
+.md-clipboard {
+  color: #188C48; /* Cor do botão */
+  border-radius: 4px;       /* Cantos arredondados */
+  padding: 5px;             /* Espaçamento interno */
+  font-size: 14px;          /* Tamanho da fonte */
+}
+
+.md-clipboard:hover {
+  color: #23ce6b; /* Cor ao passar o mouse */
+}
+
+.md-clipboard:active {
+  color: #23ce6b; /* Cor ao clicar */
+}
