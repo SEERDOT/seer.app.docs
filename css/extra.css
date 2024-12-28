@@ -14,3 +14,18 @@
 .md-header__logo {
   filter: brightness(0) invert(1); /* Ensure logos with dark colors are visible */
 }
+
+.md-clipboard {
+  color: #188C48; /* Cor do botão */
+  border-radius: 4px;       /* Cantos arredondados */
+  padding: 5px;             /* Espaçamento interno */
+  font-size: 14px;          /* Tamanho da fonte */
+}
+
+.md-clipboard:hover {
+  color: #23ce6b; /* Cor ao passar o mouse */
+}
+
+.md-clipboard:active {
+  color: #23ce6b; /* Cor ao clicar */
+}
