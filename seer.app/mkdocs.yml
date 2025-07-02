@@ -9,16 +9,19 @@ nav:
       - Página Home: frontend/home-frontend.md
       - Página Login e Registro: frontend/auth-frontend.md
       - Página Painél: frontend/dashboard-fronted.md
+      - Página Relatórios: fontend/report_app_frontend.md
 
   - Back-End:
       - Configurações: backend/settings.md
       - API: backend/api.md
       - Bibliotecas: backend/utils.md
       - Autenticação: backend/auth-backend.md
+      - Página Relatórios: fontend/report_app_backend.md
 
   - Banco de Dados: 
       - Esquema e Relações: db/schemas.md
       - Modelos: db/models.md
+      - Página Relatórios: fontend/report_app_database.md
 
   - Testes: testing.md
 
