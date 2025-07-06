@@ -640,3 +640,5 @@ O código JavaScript também utiliza `bind` para garantir que o botão "Voltar" 
 - Recomendável adicionar **animações leves** de transição para suavizar a experiência de entrada e saída.
 
 > Esse modal atua como um **guardião de fluxo**, protegendo o usuário contra perdas acidentais e promovendo uma tomada de decisão segura.
+
+> **Última atualização:** 05 jul 2025

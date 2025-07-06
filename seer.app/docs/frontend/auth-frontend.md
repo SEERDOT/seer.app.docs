@@ -149,3 +149,5 @@ Requisitos mínimos:
 3. **Links de fallback**:
    - "Reenviar código": `/resend-verification-email/`
    - "Editar email": retorna ao registro
+
+> **Última atualização:** 02 jul 2025

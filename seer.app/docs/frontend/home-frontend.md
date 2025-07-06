@@ -74,3 +74,5 @@ client_app/app/templates/
 ### 4.3 Inicialização dos Scripts
 - **DOMContentLoaded**  
 - **Função no sistema:** Adiar a execução de carrossel e drag-and-drop até que todo o HTML seja carregado, evitando erros de elementos não existentes e garantindo um comportamento estável.
+
+> **Última atualização:** 02 jul 2025

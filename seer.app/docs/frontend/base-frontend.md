@@ -134,3 +134,5 @@ A base do sistema garante que todas as páginas e seções sigam uma **linguagem
 *   Aceleração do desenvolvimento
 *   Experiência de uso mais intuitiva
 *   Facilidade de manutenção e evolução futura
+
+> **Última atualização:** 06 jul 2025
