@@ -17,7 +17,7 @@ O módulo de **Front-End** da página Home exibe:
 - Histórico de atividades  
 - (Opcional) Nota de uso e métricas adicionais  
 
-Utiliza o layout base (`base.html`) para navbar, sidebar e scripts globais, e o CSS específico (`home.css`) para estilos desta página.
+Utiliza o layout base (`base.html`) para navbar, sidebar e scripts globais, e o CSS específico (`home.css`) para estilos desta página. Além disso, a biblioteca de ícones usada é a **Material Icons Outlined**.
 
 ---
 
