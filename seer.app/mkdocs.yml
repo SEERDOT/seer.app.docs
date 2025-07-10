@@ -15,6 +15,12 @@ nav:
       - API: backend/api.md
       - Bibliotecas: backend/utils.md
       - Autenticação: backend/auth-backend.md
+      - Login: backend/views/login.md
+      - Integração: backend/views/onboarding.md
+      - Painel: backend/views/panel.md
+      - Relatórios: backend/views/relatorios.md
+      - Notificações: backend/views/notifications.md
+      - Preferências: backend/views/preferencias.md
 
   - Banco de Dados: 
       - Esquema e Relações: db/schemas.md
