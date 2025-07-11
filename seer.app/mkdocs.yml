@@ -9,6 +9,7 @@ nav:
       - Página Home: frontend/home-frontend.md
       - Página Login e Registro: frontend/auth-frontend.md
       - Página Painél: frontend/dashboard-fronted.md
+      - Página Relatórios: frontend/report_app_frontend.md
 
   - Back-End:
       - Configurações: backend/settings.md
@@ -21,10 +22,12 @@ nav:
       - Relatórios: backend/views/relatorios.md
       - Notificações: backend/views/notifications.md
       - Preferências: backend/views/preferencias.md
+      - Página Relatórios: backend/report_app_backend.md
 
   - Banco de Dados: 
       - Esquema e Relações: db/schemas.md
       - Modelos: db/models.md
+      - Página Relatórios: db/report_app_database.md
 
   - Testes: testing.md
 
