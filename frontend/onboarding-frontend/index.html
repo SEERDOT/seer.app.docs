@@ -1,0 +1,1650 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../insights-frontend/">
+      
+      
+        <link rel="next" href="../../backend/settings/">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Onboarding - seer.app docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Exo 2";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#onboarding-etapa-1-perfil-basico" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="seer.app docs" class="md-header__button md-logo" aria-label="seer.app docs" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            seer.app docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Onboarding
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="seer.app docs" class="md-nav__button md-logo" aria-label="seer.app docs" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    seer.app docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Front-End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Front-End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../base-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elementos Base
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../auth-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Login e Registro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pannel-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Painél
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notifications-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Notificações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Configurações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Suporte
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../insights-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Insights
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Onboarding
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Onboarding
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral-do-onboarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Visão Geral do Onboarding
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Back-End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Back-End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configurações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bibliotecas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/auth-backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Banco de Dados
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Banco de Dados
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/schemas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Esquema e Relações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modelos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Deploy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DevOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral-do-onboarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Visão Geral do Onboarding
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="onboarding-etapa-1-perfil-basico">🛫 Onboarding — <em>Etapa 1</em> (Perfil Básico)</h1>
+<p>Esta documentação descreve o fluxo de onboarding da plataforma <strong>seerdot</strong>.<br />
+O fluxo completo possui quatro partes sequenciais:</p>
+<ol>
+<li><a href="#etapa-1-perfil-basico">Etapa 1 – Perfil Básico</a>  </li>
+<li><a href="#etapa-2-metas-maturidade">Etapa 2 – Metas &amp; Maturidade</a>  </li>
+<li><a href="#etapa-3-integracoes-de-dados">Etapa 3 – Integrações de Dados</a>  </li>
+<li><a href="#etapa-4-revisao-conclusao">Etapa 4 – Revisao &amp; Conclusao</a>   </li>
+</ol>
+<hr />
+<h2 id="visao-geral-do-onboarding">🎯 Visão Geral do Onboarding</h2>
+<p>Após criar a conta, o usuário é conduzido por um <strong>wizard de 4 etapas</strong> que coleta dados essenciais para personalizar relatórios, recomendações e métricas.<br />
+A Etapa 1 foca em <strong>identificar o usuário e o contexto da empresa</strong>.</p>
+<blockquote>
+<p><strong>Objetivo de UX</strong><br />
+• Diminuir barreiras de entrada.<br />
+• Garantir que as primeiras recomendações sejam realmente relevantes.  </p>
+</blockquote>
+<hr />
+<h1 id="onboarding-etapa-1-estrutura-de-arquivos">Onboarding — Etapa 1 (Estrutura de arquivos)</h1>
+<table>
+<thead>
+<tr>
+<th>Template / Asset</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>baseStep1.html</code></td>
+<td>Layout geral (painel esquerdo fixo + painel direito configurável)</td>
+</tr>
+<tr>
+<td><code>getNameRole.html</code></td>
+<td>Sub‑passo 1.1 – Nome completo &amp; Cargo</td>
+</tr>
+<tr>
+<td><code>getCompanyInfos.html</code></td>
+<td>Sub‑passo 1.2 – Dados da empresa</td>
+</tr>
+<tr>
+<td><code>letsProceedOnboarding.html</code></td>
+<td>Sub‑passo 1.3 – Confirmação de maturidade</td>
+</tr>
+<tr>
+<td><code>segments_list.html</code></td>
+<td>Lista de segmentos de mercado (autocomplete)</td>
+</tr>
+<tr>
+<td><code>areas_list.html</code></td>
+<td>Lista de áreas internas (autocomplete)</td>
+</tr>
+<tr>
+<td><code>onboarding.css</code></td>
+<td>Estilos compartilhados para todo o wizard</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="fluxo-de-navegacao-etapa-1">⏩ Fluxo de Navegação (Etapa 1)</h2>
+<pre><code class="language-mermaid">flowchart LR
+  A[Nome &amp; Cargo] --&gt;|Próximo| B[Dados da Empresa]
+  B --&gt;|Próximo| C[Confirma Maturidade]
+  C --&gt;|Iniciar Etapa 2| D[Metas &amp; Maturidade]
+</code></pre>
+<p>A navegação é feita <strong>sem recarregar a aplicação inteira</strong>: cada sub‑passo é renderizado pelo Django como página própria mas reaproveita <code>baseStep1.html</code>, mantendo o painel esquerdo fixo. A sensação de continuidade vem dos IDs e classes consistentes e de <strong>transições CSS</strong> discretas (fade‑in na direita).</p>
+<hr />
+<h2 id="etapa-1-perfil-basico">✏️ Etapa 1 — Perfil Básico <a id="etapa-1-perfil-basico"></a></h2>
+<h3 id="subpasso-11-nome-cargo-getnamerolehtml">Sub‑passo 1.1 — Nome &amp; Cargo (<code>getNameRole.html</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Detalhe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Campos</strong></td>
+<td><code>#nomeCompleto</code>, <code>#cargo</code> (input + <code>datalist</code>)</td>
+</tr>
+<tr>
+<td><strong>Validação</strong></td>
+<td>Botão <code>.submit-button</code> ativo somente quando ambos preenchidos</td>
+</tr>
+<tr>
+<td><strong>Persistência</strong></td>
+<td>Valores salvos em <code>localStorage</code> (<code>userName</code>, <code>userRole</code>)</td>
+</tr>
+<tr>
+<td><strong>Acessibilidade</strong></td>
+<td><code>&lt;label&gt;</code> associado e <code>aria-required="true"</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-html">&lt;input id=&quot;nomeCompleto&quot; name=&quot;nome&quot; required /&gt;
+&lt;input id=&quot;cargo&quot; list=&quot;lista-cargos&quot; required /&gt;
+&lt;datalist id=&quot;lista-cargos&quot;&gt;
+  &lt;option value=&quot;CEO&quot;&gt;&lt;option value=&quot;Data Analyst&quot;&gt;
+&lt;/datalist&gt;
+</code></pre>
+<hr />
+<h3 id="subpasso-12-dados-da-empresa-getcompanyinfoshtml">Sub‑passo 1.2 — Dados da Empresa (<code>getCompanyInfos.html</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Fonte de dados</th>
+<th>Notas de UI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Segmento</strong></td>
+<td><code>segments_list.html</code></td>
+<td>Autocomplete filtrável</td>
+</tr>
+<tr>
+<td><strong>Área principal</strong></td>
+<td><code>areas_list.html</code></td>
+<td>Seleção múltipla opcional</td>
+</tr>
+<tr>
+<td><strong>Tamanho (funcionários)</strong></td>
+<td><code>&lt;select&gt;</code> estático</td>
+<td>Faixas numéricas</td>
+</tr>
+<tr>
+<td><strong>Maturidade de dados</strong></td>
+<td>Radio buttons (Iniciante / Intermediário / Avançado)</td>
+<td>Controla texto do sub‑passo 1.3</td>
+</tr>
+</tbody>
+</table>
+<h4 id="validacao-em-tempo-real">Validação em tempo real</h4>
+<pre><code class="language-js">const required = form.querySelectorAll('[required]');
+function check() {{
+  submit.disabled = ![...required].every(i=&gt;i.value);
+}}
+required.forEach(i=&gt;i.addEventListener('input', check));
+</code></pre>
+<hr />
+<h3 id="subpasso-13-confirmacao-e-continuacao-letsproceedonboardinghtml">Sub‑passo 1.3 — Confirmação e Continuação (<code>letsProceedOnboarding.html</code>)</h3>
+<ul>
+<li>Exibe saudação com o <strong>nome</strong> salvo e mensagem contextual baseada na maturidade.  </li>
+<li>Botão <strong>“Começar Etapa 2”</strong> envia <code>POST /onboarding/step2/start</code>.</li>
+</ul>
+<hr />
+<h2 id="padroes-de-design-relevantes">🎨 Padrões de Design Relevantes</h2>
+<ul>
+<li><strong>Fonte global:</strong> <code>'Exo 2', sans-serif</code>  </li>
+<li><strong>Cor primária:</strong> <code>#23CE6B</code> • <strong>Hover:</strong> <code>#188C48</code>  </li>
+<li><strong>Botões desativados:</strong> <code>opacity: 0.5; cursor: not-allowed</code>  </li>
+<li><strong>Barra de progresso:</strong> altura 6 px, anima de <code>width: 0 → 33%</code> via <code>.animate-progress</code>  </li>
+</ul>
+<hr />
+<h2 id="responsividade-rapida">📱 Responsividade Rápida</h2>
+<table>
+<thead>
+<tr>
+<th>Viewport</th>
+<th>Layout</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>≥ 992 px</strong></td>
+<td>Painel esquerdo (40 %) + form direito (60 %)</td>
+</tr>
+<tr>
+<td><strong>768‑991 px</strong></td>
+<td>Painel esquerdo encolhe para 30 %, conteúdo direito 70 %</td>
+</tr>
+<tr>
+<td><strong>≤ 767 px</strong></td>
+<td>Painel esquerdo colapsa; formulário toma 100 %</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="checklist-etapa-1">✅ Checklist — Etapa 1</h2>
+<ul>
+<li>[x] Captura de perfil pessoal (nome &amp; cargo)  </li>
+<li>[x] Captura de perfil organizacional (segmento, área, tamanho)  </li>
+<li>[x] Validação client‑side e feedback de botão ativo/inativo  </li>
+<li>[x] Barra de progresso visual  </li>
+<li>[x] Layout responsivo até 320 px  </li>
+<li>[x] Acessibilidade mínima (labels &amp; contraste)</li>
+</ul>
+<hr />
+<h1 id="onboarding-etapa-2-objetivo-desafios-de-dados">Onboarding — Etapa 2 (Objetivo &amp; Desafios de Dados) <a id="etapa-2-metas-maturidade"></a></h1>
+<hr />
+<h2 id="visao-geral">Visão Geral</h2>
+<p>A segunda etapa do onboarding coleta <strong>metas de negócio</strong> e <strong>principais desafios de dados</strong> do cliente.<br />
+Essas informações guiam o algoritmo de recomendação da <em>seer.app</em>, permitindo gerar um <strong>plano inicial</strong> alinhado às prioridades do usuário.</p>
+<ul>
+<li><strong>Problema resolvido:</strong> entender o <em>por‑quê</em> da integração antes de sugerir features ou KPIs.  </li>
+<li><strong>Saída esperada:</strong> • <code>primary_goal</code> • <code>data_challenges[]</code> • flags de segmentação.  </li>
+<li><strong>Integração:</strong> POST para <em>/api/onboarding/step‑2/</em>; navega para Etapa 3 após sucesso.</li>
+</ul>
+<hr />
+<h2 id="estrutura-da-pagina">🏗️ Estrutura da Página</h2>
+<table>
+<thead>
+<tr>
+<th>Nº</th>
+<th>Componente</th>
+<th>Função</th>
+<th>Arquivo</th>
+<th>Notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Barra de progresso</strong></td>
+<td>Indica 50 % concluído</td>
+<td><code>baseStep2.html</code></td>
+<td><code>.progress-bar::before</code> animado de 25→50 %</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Pane Esquerdo</strong></td>
+<td>Mensagem motivacional</td>
+<td><code>baseStep2.html</code></td>
+<td><code>.left-panel</code> fixa, rola independente</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Top‑bar</strong></td>
+<td>Botão Voltar ← + indicador “Etapa 2/4”</td>
+<td><code>baseStep2.html</code></td>
+<td>classe <code>.back-button</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Bloco de Objetivos</strong></td>
+<td>4 cartões clicáveis (<code>.objective-option</code>)</td>
+<td><code>getGoal.html</code></td>
+<td>Seleção única</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Bloco Desafios</strong></td>
+<td>Lista scrollável de checkbox (<code>.challenge-option</code>)</td>
+<td><code>dataChallenges.html</code></td>
+<td>Seleção múltipla + tooltips</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Botão Próximo</strong></td>
+<td>Avança para Etapa 3</td>
+<td><code>baseStep2.html</code></td>
+<td><code>.submit-button</code> habilita quando requisitos ok</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="comportamento-logica">Comportamento &amp; Lógica</h2>
+<pre><code class="language-js">/** habilita botão quando há um goal e ≥1 challenge */
+function updateSubmitState(){
+  const okGoal = document.querySelector('.objective-option.active');
+  const okCh   = document.querySelector('.challenge-option.active');
+  submitBtn.classList.toggle('active', !!okGoal &amp;&amp; !!okCh);
+}
+
+goalCards.forEach(c=&gt;c.onclick = () =&gt;{
+  goalCards.forEach(x=&gt;x.classList.remove('active'));
+  c.classList.add('active');
+  updateSubmitState();
+});
+
+challengeOptions.forEach(opt=&gt;{
+  opt.onclick = () =&gt;{
+    opt.classList.toggle('active');
+    updateSubmitState();
+  };
+});
+
+/* tooltips */
+icon.addEventListener('mouseenter', showTooltip);
+icon.addEventListener('mouseleave', hideTooltip);
+</code></pre>
+<h3 id="navegacao">Navegação</h3>
+<ol>
+<li><strong>Voltar:</strong> <code>window.history.back()</code>  </li>
+<li><strong>Próximo:</strong> envia payload via <code>fetch</code> + header <code>X‑CSRFToken</code>; <code>location.href = '/onboarding/step‑3/'</code>.</li>
+</ol>
+<hr />
+<h2 id="design-system">Design System</h2>
+<ul>
+<li><strong>Tipografia:</strong> <code>'Exo 2', sans‑serif</code> (32 px título, 20 px subtítulo).  </li>
+<li>
+<p><strong>Cores-chave:</strong><br />
+  | Token | Hex | Uso |
+  |-------|-----|-----|
+  | <code>primary‑green</code> | <code>#23CE6B</code> | progresso, botão ativo |
+  | <code>dark‑green</code> | <code>#188C48</code> | hover, foco |
+  | <code>grey‑bg</code> | <code>#DFDFDF</code> | fundo neutro |
+  | <code>card‑white</code> | <code>#FFFFFF</code> | cartões &amp; inputs |</p>
+</li>
+<li>
+<p><strong>Hover / Active:</strong> cartões ganham <code>border-color: #188C48</code> e texto verde.  </p>
+</li>
+<li><strong>Inputs padrão:</strong> 375×50 px, <code>border-radius: 10px</code>, <code>background: #dfdfdf</code>.</li>
+</ul>
+<hr />
+<h2 id="responsividade">Responsividade</h2>
+<table>
+<thead>
+<tr>
+<th>Viewport</th>
+<th>Layout</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>≥ 1200 px</strong></td>
+<td>Coluna esquerda 30 %, direita 70 %</td>
+</tr>
+<tr>
+<td><strong>Tablet (992–1199)</strong></td>
+<td>Painéis mantêm proporção, texto reduz 90 %</td>
+</tr>
+<tr>
+<td><strong>Mobile (&lt; 768)</strong></td>
+<td>Painéis viram <em>stack</em> vertical; progress‑bar fixa; cartões 100 % largura</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ids-classes-dependencias">IDs, Classes &amp; Dependências</h2>
+<pre><code class="language-text">.progress-bar         // animada via keyframes
+.objective-option     // card de objetivo (data-goal-id)
+.challenge-option     // item de desafio (data-challenge-id)
+.submit-button        // botão Próximo
+#tooltips-container   // wrapper fixo para tooltips dinâmicos
+</code></pre>
+<p><strong>CSS:</strong> <code>onboardingSetp2.css</code> fileciteturn15file3<br />
+<strong>JS libs:</strong> nenhuma externa; apenas Vanilla JS + <code>fetch</code>.</p>
+<hr />
+<h2 id="checklist-de-requisitos">Checklist de Requisitos</h2>
+<ul>
+<li>[x] Barra de progresso animada 25 → 50 %  </li>
+<li>[x] Seleção única de objetivo  </li>
+<li>[x] Seleção múltipla de desafios  </li>
+<li>[x] Tooltip acessível (<code>.tooltip::after</code>)  </li>
+<li>[x] Validação habilita botão Próximo  </li>
+<li>[x] Responsivo até 320 px  </li>
+</ul>
+<hr />
+<h1 id="onboarding-etapa-3-integracoes-de-dados">🛫 Onboarding — <em>Etapa 3</em> (Integrações de Dados) <a id="etapa-3-integracoes-de-dados"></a></h1>
+<h2 id="visao-geral_1">Visão Geral</h2>
+<p>A <strong>Etapa 3</strong> do onboarding coleta as <strong>integrações de dados</strong> que o cliente já utiliza para que a <em>seerdot</em> possa conectar‑se automaticamente às fontes corretas.</p>
+<ul>
+<li><strong>Propósito:</strong> identificar ferramentas (ERP, CRM, BI etc.) e preparar conectores.  </li>
+<li><strong>Problema resolvido:</strong> elimina configuração manual posterior e acelera o time‑to‑value.  </li>
+<li><strong>Integração no fluxo:</strong> sucede <em>Metas &amp; Desafios</em>; ao concluir, o usuário vai para <strong>Etapa 4 – Revisão &amp; Conclusão</strong>.</li>
+</ul>
+<hr />
+<h2 id="estrutura-da-pagina_1">🏗️ Estrutura da Página  <a id="estrutura-da-página"></a></h2>
+<h3 id="1-layout-base-basestep3html">1. Layout Base (<code>baseStep3.html</code>)</h3>
+<ul>
+<li><strong>Função:</strong> casca geral com painel esquerdo motivacional + painel direito dinâmico.  </li>
+<li><strong>Técnica:</strong> <code>grid</code> 2 colunas; barra de progresso fixa (<code>.progress-bar</code>) chega a <strong>75 %</strong>.  </li>
+<li><strong>Comportamento:</strong> botão <strong>Voltar</strong> retorna <code>window.history.back()</code>.  </li>
+<li><strong>Dependências:</strong> nenhuma biblioteca externa. fileciteturn18file2L1-L25</li>
+</ul>
+<h3 id="2-resumo-de-integracoes-letsintegratehtml">2. Resumo de Integrações (<code>letsIntegrate.html</code>)</h3>
+<ul>
+<li><strong>Função:</strong> saudar usuário pelo nome e explicar por que conectar ferramentas.  </li>
+<li><strong>Técnica:</strong> texto + botão <strong>Vamos começar</strong> (<code>.start-btn</code>).  </li>
+<li><strong>Comportamento:</strong> clique vai para <code>/onboarding/step3/tools</code>. fileciteturn18file3L1-L20</li>
+</ul>
+<h3 id="3-teste-de-conectividade-letsintegrate2html">3. Teste de Conectividade (<code>letsIntegrate2.html</code>)</h3>
+<ul>
+<li><strong>Função:</strong> exibe <em>checklist animado</em> (roteiro, chaves de API, criação de conta…).  </li>
+<li><strong>Técnica:</strong> lista <code>&lt;li&gt;</code> com <code>setTimeout()</code> que troca ícone <em>spinner → check</em>.  </li>
+<li><strong>Comportamento:</strong> após todos ticks, redireciona para seleção de ferramentas.  </li>
+<li><strong>Dependências:</strong> Material Icons + Vanilla JS. fileciteturn18file4L20-L50</li>
+</ul>
+<h3 id="4-selecao-de-ferramentas-ferramentasgestaohtml">4. Seleção de Ferramentas (<code>ferramentasGestao.html</code>)</h3>
+<ul>
+<li><strong>Função:</strong> grade de cartões com ERPs/CRMs populares; permite múltipla escolha.  </li>
+<li><strong>Técnica:</strong> <code>flex-wrap</code> + modais de busca (<code>#searchTools</code>).  </li>
+<li><strong>Comportamento:</strong>  </li>
+<li>Clicar em cartão ativa classe <code>selected</code>.  </li>
+<li>Botão <strong>Continuar</strong> habilita quando ≥1 selecionado.  </li>
+<li><strong>Dependências:</strong> ícones SVG locais. fileciteturn18file5L30-L80</li>
+</ul>
+<hr />
+<h2 id="fluxo-de-interacao">📈 Fluxo de Interação  <a id="fluxo-de-interação"></a></h2>
+<pre><code class="language-mermaid">flowchart TD
+  A[letsIntegrate.html] --&gt;|Start| B[letsIntegrate2.html]
+  B --&gt;|Checklist completo| C[ferramentasGestao.html]
+  C --&gt;|Seleciona ≥1 ferramenta| D[POST /onboarding/step3/save]
+  D --&gt; E[Etapa 4 – Revisão]
+</code></pre>
+<h3 id="logica-principal-pseudocodigo">Lógica principal (pseudocódigo)</h3>
+<pre><code class="language-js">// letsIntegrate2.html
+const steps = [...document.querySelectorAll('.check-item')];
+
+function runChecklist(idx=0){
+  if(idx &gt;= steps.length){return next();}
+  const el = steps[idx];
+  el.classList.add('checking');
+  setTimeout(()=&gt;{
+     el.classList.replace('checking','done');
+     runChecklist(idx+1);
+  },1500);
+}
+
+function toggleTool(card){
+  card.classList.toggle('selected');
+  nextBtn.disabled = !document.querySelector('.selected');
+}
+</code></pre>
+<hr />
+<h2 id="padroes-de-design">🎨 Padrões de Design  <a id="padrões-de-design"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Estilo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fonte global</strong></td>
+<td><code>'Exo 2', sans-serif</code></td>
+</tr>
+<tr>
+<td><strong>Progresso 75 %</strong></td>
+<td><code>.progress-bar::before { width: 75% ; background:#23CE6B; }</code></td>
+</tr>
+<tr>
+<td><strong>Cartão Tool</strong></td>
+<td>fundo <code>#fff</code>, borda <code>1px solid #969696</code>, <code>border-radius: 8px</code></td>
+</tr>
+<tr>
+<td><strong>Cartão Selecionado</strong></td>
+<td><code>border-color: #188C48; box-shadow:0 0 8px rgba(0,0,0,.2)</code></td>
+</tr>
+<tr>
+<td><strong>Botões ativos</strong></td>
+<td>fundo <code>#23CE6B</code>, hover <code>#188C48</code>, texto branco</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="responsividade_1">📱 Responsividade  <a id="responsividade"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Ajustes principais</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>≥ 1200 px</code> (Desktop)</td>
+<td>Grade 4 colunas de cartões (25 % cada)</td>
+</tr>
+<tr>
+<td><code>992–1199 px</code></td>
+<td>Grade 3 colunas</td>
+</tr>
+<tr>
+<td><code>768–991 px</code></td>
+<td>Grade 2 colunas; painel esquerdo encolhe 25 %</td>
+</tr>
+<tr>
+<td><code>&lt; 768 px</code> (Mobile)</td>
+<td>Painel esquerdo some; grade 1 coluna; botão fixa bottom</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pontos-criticos">Pontos Críticos  <a id="componentes-críticos"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Por que é crítico?</th>
+<th>Seletores‑chave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Checklist Animado</strong></td>
+<td>Garante percepção de progresso e prepara usuário para ação seguinte.</td>
+<td><code>.check-item</code>, <code>.check-icon</code></td>
+</tr>
+<tr>
+<td><strong>Grade de Ferramentas</strong></td>
+<td>Captura integrações; sem ela, personalização falha.</td>
+<td><code>.tool-card.selected</code>, <code>data-tool-id</code></td>
+</tr>
+<tr>
+<td><strong>Botão Continuar</strong></td>
+<td>Avança para Etapa 4 e envia payload; bloqueio evita avanço inválido.</td>
+<td><code>#continueBtn</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="checklist-etapa-3">✅ Checklist — Etapa 3</h2>
+<ul>
+<li>[x] Barra de progresso até 75 %  </li>
+<li>[x] Checklist animado com timers sequenciais  </li>
+<li>[x] Seleção múltipla de ferramentas e validação de botão  </li>
+<li>[x] Persistência em <code>localStorage</code> (<code>selectedTools</code>)  </li>
+<li>[x] Acessibilidade: foco visível + <code>aria-checked</code> em cartões  </li>
+<li>[x] Responsivo até 320 px  </li>
+</ul>
+<hr />
+<h1 id="onboarding-etapa-4-revisao-conclusao">🛫 Onboarding — <em>Etapa 4</em> (Revisao &amp; Conclusao) <a id="etapa-4-revisao-conclusao"></a></h1>
+<p>A etapa final do wizard de onboarding <strong>encerra a configuração inicial</strong> apresentando
+um <strong>plano recomendado</strong> e permitindo que o usuário <strong>escolha ou altere</strong> sua assinatura
+antes de começar a usar a plataforma.</p>
+<hr />
+<h2 id="visao-geral_2">🎯 Visão Geral</h2>
+<p>Depois de coletar <strong>perfil, objetivos e integrações</strong> nas etapas anteriores,
+o sistema calcula a melhor oferta de serviço.<br />
+Nesta tela o usuário <em>revê</em> essa recomendação e <strong>finaliza</strong> o onboarding ao
+selecionar um dos planos disponíveis.</p>
+<hr />
+<h2 id="estrutura-de-arquivos">🏗️ Estrutura de Arquivos</h2>
+<table>
+<thead>
+<tr>
+<th>Arquivo / Template</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>baseStep4.html</code></td>
+<td>Esqueleto da etapa 4: barra de progresso, <strong>painel esquerdo estático</strong> e <strong>painel direito dinâmico</strong> fileciteturn19file1L18-L26</td>
+</tr>
+<tr>
+<td><code>recomendacao_plano.html</code></td>
+<td>Sub‑passo 4.1 – mostra mensagem com <strong>plano sugerido</strong> e botão <em>Próximo</em> fileciteturn19file0L13-L23</td>
+</tr>
+<tr>
+<td><code>planos.html</code></td>
+<td>Sub‑passo 4.2 – lista de <strong>cartões de plano</strong> com preços, features e botão <em>Comprar</em> fileciteturn19file2L17-L26</td>
+</tr>
+<tr>
+<td><code>onboardingStep4.css</code></td>
+<td>Estilos específicos: progress‑bar 95 %, grid de planos, badge “RECOMENDADO” fileciteturn19file5L26-L34</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="fluxo-de-navegacao">🔄 Fluxo de Navegação</h2>
+<pre><code class="language-mermaid">flowchart LR
+  A[recomendacao_plano.html] --&gt;|Próximo| B[planos.html]
+  B --&gt;|Comprar| C[Checkout 🔒]
+  B --&gt;|Voltar| A
+</code></pre>
+<p><em>Barra de progresso</em> aumenta de <strong>75 % → 95 %</strong> ao carregar a etapa 4,
+indicando conclusão iminente.</p>
+<hr />
+<h2 id="componentes-principais">🧩 Componentes Principais</h2>
+<h3 id="1-barra-de-progresso">1. Barra de Progresso</h3>
+<ul>
+<li><strong>Função:</strong> reforçar que o usuário está a um passo da finalização.  </li>
+<li><strong>Técnica:</strong> pseudo‑elemento <code>::before</code> que parte de 75 % e anima até 95 %  fileciteturn19file5L26-L41  </li>
+<li><strong>Comportamento:</strong> classe <code>.animate-progress</code> adicionada on‑load.</li>
+</ul>
+<h3 id="2-painel-esquerdo">2. Painel Esquerdo</h3>
+<ul>
+<li><strong>Função:</strong> mensagem motivacional e branding constante.  </li>
+<li><strong>Técnica:</strong> <code>position: fixed; width: 30 %</code>; rolagem independente.  </li>
+<li><strong>Conteúdo:</strong> logo + texto com spans <code>.highlight</code> verdes.</li>
+</ul>
+<h3 id="3-card-de-recomendacao-de-plano-subpasso-41">3. Card de <strong>Recomendação de Plano</strong> (Sub‑passo 4.1)</h3>
+<ul>
+<li><strong>Função:</strong> mostrar resumo dos dados coletados e sugerir o plano ideal.  </li>
+<li><strong>HTML chave:</strong> parágrafo <code>#mensagemRecomendacao</code> recebe contexto via Django.  </li>
+<li><strong>Botão:</strong> <code>.next-button</code> avança para seleção de planos.</li>
+</ul>
+<h3 id="4-cartoes-de-plano-plan">4. <strong>Cartões de Plano</strong> (<code>.plan</code>)</h3>
+<ul>
+<li><strong>Função:</strong> permitir que o usuário compare e compre o serviço.  </li>
+<li><strong>Estrutura técnica:</strong><br />
+  ```html
+<br />
+<div class="plan plan-recommended" id="planoBasico">
+      <div class="recommendation-badge">RECOMENDADO</div>
+      <div class="plan-title">
+        <span class="material-icons-outlined">star_rate</span>
+        <span>Básico</span>
+      </div>
+      <div class="plan-price"><span>R$ 275</span>/mês</div>
+      <!-- switch mensal/annual + botão .compra-plano -->
+  </div></li>
+</ul>
+<p><code>``  
+  fileciteturn19file2L18-L31  
+- **Destaque:** o plano indicado vem com classe</code>plan-recommended<code>que pinta borda/ sombra e exibe</code>RECOMENDADO`.</p>
+<h3 id="5-switch-mensal-anual">5. Switch <strong>Mensal × Anual</strong></h3>
+<ul>
+<li><strong>Função:</strong> atualizar preço e badge “MELHOR VALOR”.  </li>
+<li><strong>Interação:</strong> clique nos elementos <code>.plan-switch-item</code> alterna
+  classes <code>active-left / active-right</code> e troca texto <strong>R$</strong>.</li>
+</ul>
+<h3 id="6-botoes-comprar">6. Botões <strong>Comprar</strong></h3>
+<ul>
+<li><strong>IDs:</strong> <code>#basico</code>, <code>#pro</code> (exemplo).  </li>
+<li><strong>Comportamento:</strong> <code>onclick</code> dispara rota <code>/checkout/</code> (a definir).</li>
+</ul>
+<hr />
+<h2 id="padroes-de-design_1">🎨 Padrões de Design</h2>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fonte</strong></td>
+<td><code>'Exo 2', sans‑serif</code></td>
+</tr>
+<tr>
+<td><strong>Cor primária</strong></td>
+<td><code>#23CE6B</code> (botões, barra)</td>
+</tr>
+<tr>
+<td><strong>Hover</strong></td>
+<td><code>#188C48</code></td>
+</tr>
+<tr>
+<td><strong>Badge recomendado</strong></td>
+<td>fundo <code>#23CE6B</code>, texto branco</td>
+</tr>
+<tr>
+<td><strong>Cartões</strong></td>
+<td><code>border-radius: 8px; box-shadow: 0 2 4px rgba(0,0,0,.1)</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="responsividade_2">📱 Responsividade</h2>
+<table>
+<thead>
+<tr>
+<th>Largura</th>
+<th>Ajuste</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>≥ 1200 px</code></td>
+<td>Painel esquerdo 30 %, grid de planos 3 colunas</td>
+</tr>
+<tr>
+<td><code>992 – 1199</code></td>
+<td>Planos em 2 colunas</td>
+</tr>
+<tr>
+<td><code>&lt; 768</code></td>
+<td>Painel esquerdo colapsa; planos empilham 1 coluna; badge e preço centralizados</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="checklist">✅ Checklist</h2>
+<ul>
+<li>[x] Barra de progresso animada até 95 %  </li>
+<li>[x] Plano recomendado destacado automaticamente  </li>
+<li>[x] Alternância mensal / anual atualiza preço  </li>
+<li>[x] Todos botões têm estados <em>hover</em> e <em>disabled</em> coerentes  </li>
+<li>[x] Layout responsivo ≥ 320 px  </li>
+<li>[x] Sem dependências externas além de Bootstrap &amp; Material Icons  </li>
+</ul>
+<hr />
+<blockquote>
+<p><strong>Última atualização:</strong> 11 jul 2025</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

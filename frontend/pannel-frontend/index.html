@@ -1,0 +1,1448 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../auth-frontend/">
+      
+      
+        <link rel="next" href="../notifications-frontend/">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Página Painél - seer.app docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Exo 2";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacao-pagina-painel" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="seer.app docs" class="md-header__button md-logo" aria-label="seer.app docs" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            seer.app docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Página Painél
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="seer.app docs" class="md-nav__button md-logo" aria-label="seer.app docs" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    seer.app docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Front-End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Front-End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../base-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elementos Base
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../auth-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Login e Registro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Página Painél
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Painél
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-anatomia-do-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Anatomia do DOM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Componentes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Componentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-breadcrumb" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Breadcrumb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-navegacao-de-setores" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Navegação de Setores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Navegação de Setores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-isso-e-feito" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como isso é feito?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-filtros-globais" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Filtros Globais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-indicadores-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Indicadores (KPIs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Gráficos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-tooltips-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Tooltips KPI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-de-interacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fluxo de Interações
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-estilos-relevantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Estilos Relevantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-extensibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Extensibilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Dependências
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notifications-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Notificações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Configurações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Suporte
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../insights-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Insights
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../onboarding-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Onboarding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Back-End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Back-End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configurações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bibliotecas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/auth-backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Banco de Dados
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Banco de Dados
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/schemas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Esquema e Relações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modelos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Deploy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DevOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-anatomia-do-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Anatomia do DOM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Componentes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Componentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-breadcrumb" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Breadcrumb
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-navegacao-de-setores" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Navegação de Setores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Navegação de Setores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-isso-e-feito" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como isso é feito?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-filtros-globais" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Filtros Globais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-indicadores-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Indicadores (KPIs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Gráficos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-tooltips-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Tooltips KPI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fluxo-de-interacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fluxo de Interações
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-estilos-relevantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Estilos Relevantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-extensibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Extensibilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Dependências
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacao-pagina-painel">Documentação Página <em>Painel</em></h1>
+<blockquote>
+<p><strong>Contexto</strong>: a página <em>Painel</em> oferece uma visão consolidada dos setores <strong>Financeiro</strong> e <strong>Vendas</strong> da empresa. São exibidos KPIs, gráficos interativos e filtros de período, além de exportação para PDF.</p>
+</blockquote>
+<hr />
+<h2 id="1-visao-geral">1. Visão Geral</h2>
+<ul>
+<li><strong>Templates</strong>: <code>financeiro_panel.html</code>, <code>vendas_panel.html</code></li>
+<li><strong>Estilos</strong>: <code>panel.css</code> (global), <code>panelVendas.css</code> (vendas)</li>
+<li><strong>Bibliotecas</strong>: Highcharts, <strong>jsPDF 2.5.1</strong>, <strong>html2canvas 1.4.1</strong>, Material Icons Outlined</li>
+<li><strong>Objetivo UX</strong>: leitura rápida de métricas, comparação temporal e compartilhamento de relatórios.</li>
+</ul>
+<hr />
+<h2 id="2-anatomia-do-dom">2. Anatomia do DOM</h2>
+<pre><code class="language-text">.panel-container
+ ├─ .breadcrumb
+ ├─ .title-select-row
+ │   └─ .global-filter-container
+ ├─ .sectors-nav
+ ├─ .kpi-row (x2)
+ ├─ .graph-container           (linha/área)
+ ├─ .blank-containers
+ │   ├─ .blank-container (bar)
+ │   └─ .blank-container (pie/bar)
+ └─ #tooltips-container
+</code></pre>
+<p>Principais IDs para scripts/estilos:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>global-filter-btn</code></td>
+<td>Abre dropdown de filtros globais</td>
+</tr>
+<tr>
+<td><code>global-filter-dropdown</code></td>
+<td>Container das <code>.filter-option</code></td>
+</tr>
+<tr>
+<td><code>profit-chart</code></td>
+<td>Gráfico de faturamento</td>
+</tr>
+<tr>
+<td><code>bar-chart</code></td>
+<td>Lucro bruto × líquido</td>
+</tr>
+<tr>
+<td><code>bar-chart-right</code></td>
+<td>Despesas por categoria</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-componentes">3. Componentes</h2>
+<p>Cada componente abaixo cumpre um papel específico de <strong>usabilidade</strong> dentro do sistema.</p>
+<h3 id="31-breadcrumb">3.1 Breadcrumb</h3>
+<p><strong>Função:</strong> Orientar o usuário, mostrando em que parte da plataforma ele se encontra e permitindo voltar facilmente a níveis anteriores.</p>
+<p>Exibe caminho da aplicação; ícone inicial verde (<code>#23CE6B</code>).</p>
+<h3 id="32-navegacao-de-setores">3.2 Navegação de Setores</h3>
+<p><strong>Função:</strong> Permitir alternar rapidamente entre as visões Financeiro e Vendas sem recarregar toda a aplicação.</p>
+<p>Botões <code>.sector-item</code> redirecionam para <code>/panel/financeiro</code> ou <code>/panel/vendas</code>.<br />
+Classe <code>.selected</code> colore o botão ativo (fundo <code>#CDF8E8</code>, texto <code>#188C38</code>).</p>
+<h4 id="como-isso-e-feito">Como isso é feito?</h4>
+<ol>
+<li>
+<p><strong>URL pattern</strong> — <code>/client/panel/&lt;sector&gt;</code> mapeia para a <em>view</em> <code>panel(sector)</code>.</p>
+</li>
+<li>
+<p>A view carrega o contexto adequado (KPIs, datasets) e decide qual <em>partial</em> incluir:</p>
+</li>
+<li>
+<p><code>financeiro_panel.html</code> ou <code>vendas_panel.html</code>.</p>
+</li>
+<li>
+<p>Ambos os parciais <strong>estendem o mesmo <code>base.html</code></strong> e compartilham o CSS global, portanto apenas a seção interna muda; os assets não são baixados de novo graças ao cache do navegador.</p>
+</li>
+<li>
+<p>Resultado: há, tecnicamente, um <em>full-page reload</em>, mas com latência mínima e sem “flash” de layout, o que faz a navegação parecer instantânea.</p>
+</li>
+</ol>
+<h3 id="33-filtros-globais">3.3 Filtros Globais</h3>
+<p><strong>Função:</strong> Restringir o período de análise de <strong>todos</strong> os KPIs e gráficos simultaneamente, garantindo leituras consistentes.</p>
+<p>Dropdown controlado por <code>global-filter-btn</code>. Cada <code>&lt;li class="filter-option"&gt;</code> possui <code>data-months</code> (1, 3, 6, 12).<br />
+Evento <code>click</code> dispara atualização de KPIs e gráficos.</p>
+<pre><code class="language-html">&lt;li class=&quot;filter-option&quot; data-months=&quot;6&quot;&gt;Últimos 6 meses&lt;/li&gt;
+</code></pre>
+<h3 id="34-indicadores-kpis">3.4 Indicadores (KPIs)</h3>
+<p><strong>Função:</strong> Apresentar métricas‑chave em formato reduzido, permitindo uma varredura rápida de performance sem abrir relatórios completos.</p>
+<p>Estrutura típica:</p>
+<pre><code class="language-html">&lt;div class=&quot;kpi-container&quot;&gt;
+  &lt;div class=&quot;kpi-header&quot;&gt;
+    &lt;span&gt;Faturamento Total&lt;/span&gt;
+    &lt;i class=&quot;material-icons-outlined help-icon&quot;&gt;help_outline&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;kpi-value&quot;&gt;R$ 2.300.000&lt;/div&gt;
+  &lt;div class=&quot;kpi-change up&quot;&gt;
+    &lt;i class=&quot;material-icons-outlined&quot;&gt;trending_up&lt;/i&gt;&lt;span&gt;+5%&lt;/span&gt;
+    &lt;span class=&quot;compareText&quot;&gt;vs. mês passado&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li>Classes <code>.up</code> / <code>.down</code> definem cor verde ou vermelha (panel.css).</li>
+<li>Tooltip agregado ao ícone <code>help-icon</code> (ver § 4.6).</li>
+</ul>
+<h3 id="35-graficos">3.5 Gráficos</h3>
+<p><strong>Função:</strong> Visualizar tendências e comparações ao longo do tempo ou entre categorias, transformando números em insights visuais.</p>
+<p>Cada gráfico fica dentro de <code>.graph-container</code> ou <code>.blank-container</code> com header:</p>
+<pre><code class="language-html">&lt;div class=&quot;graph-header&quot;&gt;
+  &lt;h2&gt;Receita Mensal&lt;/h2&gt;
+  &lt;div class=&quot;graph-controls&quot;&gt;
+    &lt;select class=&quot;period-select&quot;&gt;Mensal&lt;/select&gt;
+    &lt;button class=&quot;share-btn&quot;&gt;&lt;i class=&quot;material-icons-outlined&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;profit-chart&quot;&gt;&lt;/div&gt;
+</code></pre>
+<p>Scripts Highcharts leem dados de <code>window.profitChartData</code> etc.</p>
+<h3 id="36-tooltips-kpi">3.6 Tooltips KPI</h3>
+<p><strong>Função:</strong> Fornecer explicações rápidas sobre o cálculo ou significado dos KPIs, sem desviar o usuário para outra página.</p>
+<p>Tooltips estão em <code>#tooltips-container .tooltip</code>. JS vincula cada <code>.help-icon</code> ao tooltip correspondente:</p>
+<pre><code class="language-css">.tooltip { opacity:0; transition:opacity .2s; }
+.tooltip.visible { opacity:1; }
+</code></pre>
+<hr />
+<h2 id="4-fluxo-de-interacoes">4. Fluxo de Interações</h2>
+<table>
+<thead>
+<tr>
+<th>Interação</th>
+<th>Elemento</th>
+<th>Lógica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Filtro global</strong></td>
+<td><code>.filter-option</code></td>
+<td>Atualiza <code>currentFilter</code>; fetch no backend; re-render KPIs/gráficos</td>
+</tr>
+<tr>
+<td><strong>Filtro local</strong></td>
+<td><code>.period-select</code> ou <code>.time-option</code></td>
+<td>Atualiza apenas o gráfico dentro do contêiner</td>
+</tr>
+<tr>
+<td><strong>Exportar PDF</strong></td>
+<td><code>.share-btn</code></td>
+<td><code>generateChartPDF(id,title)</code> → html2canvas → jsPDF.save</td>
+</tr>
+<tr>
+<td><strong>Tooltip</strong></td>
+<td><code>.help-icon</code> mouseenter</td>
+<td>Adiciona classe <code>.visible</code> ao tooltip correspondente</td>
+</tr>
+</tbody>
+</table>
+<p>Trecho da função de exportação:</p>
+<pre><code class="language-js">function generateChartPDF(containerId, title){
+  html2canvas(document.getElementById(containerId)).then(canvas=&gt;{
+    const pdf = new jsPDF('p','mm','a4');
+    pdf.addImage(canvas,'PNG',10,10,190,90);
+    pdf.save(`${title}-${new Date().toISOString().slice(0,10)}.pdf`);
+  });
+}
+</code></pre>
+<hr />
+<h2 id="5-estilos-relevantes">5. Estilos Relevantes</h2>
+<p><code>panel.css</code> (GLOBAL):</p>
+<pre><code class="language-css">.kpi-container     { background:#fff;border-radius:8px;padding:20px; }
+.kpi-change.up     { color:#23CE6B; }
+.kpi-change.down   { color:#B3261E; }
+.sector-item       { cursor:pointer;padding:8px 16px;border-radius:5px; }
+.sector-item:hover { background:#CDF8E8; }
+.share-btn:hover   { background:#CDF8E8;color:#188C48; }
+</code></pre>
+<p><code>panelVendas.css</code> (Vendas):</p>
+<pre><code class="language-css">.sector-item.vendas.selected { background:#A8C9FF;color:#2384CE; }
+</code></pre>
+<hr />
+<h2 id="6-extensibilidade">6. Extensibilidade</h2>
+<ul>
+<li><strong>Novos KPIs</strong>: adicionar entrada no dicionário <code>kpis</code> (context) e clonar <code>.kpi-container</code>.  </li>
+<li><strong>Novos gráficos</strong>: criar <code>&lt;div id="new-chart"&gt;&lt;/div&gt;</code> + script Highcharts + botão share.  </li>
+<li><strong>Novos filtros</strong>: inserir novo <code>&lt;li class="filter-option"&gt;</code> e tratar no backend.</li>
+</ul>
+<hr />
+<h2 id="7-dependencias">7. Dependências</h2>
+<table>
+<thead>
+<tr>
+<th>Biblioteca</th>
+<th>Finalidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Highcharts</strong></td>
+<td>Renderização de linhas, barras, pizza</td>
+</tr>
+<tr>
+<td><strong>jsPDF</strong> 2.5.1</td>
+<td>Criação de PDF</td>
+</tr>
+<tr>
+<td><strong>html2canvas</strong> 1.4.1</td>
+<td>Screenshot DOM</td>
+</tr>
+<tr>
+<td><strong>Material Icons</strong></td>
+<td>Ícones de interface</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p><strong>Última atualização:</strong> 06 jul 2025</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1515 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../notifications-frontend/">
+      
+      
+        <link rel="next" href="../support-frontend/">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Página Configurações - seer.app docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Exo 2";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacao-configuracoes-e-preferencias" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="seer.app docs" class="md-header__button md-logo" aria-label="seer.app docs" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            seer.app docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Página Configurações
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="seer.app docs" class="md-nav__button md-logo" aria-label="seer.app docs" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    seer.app docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Front-End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Front-End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../base-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elementos Base
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../home-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../auth-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Login e Registro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pannel-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Painél
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notifications-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Notificações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Página Configurações
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Configurações
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tabela-de-conteudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Conteúdo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-proposito-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Propósito &amp; Escopo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-componentes-visuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Componentes Visuais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Componentes Visuais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-settings-modal" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Settings Modal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-pagina-de-preferencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Página de Preferências
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-aba-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Aba Geral
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-aba-privacidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Aba Privacidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fluxo-de-interacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Fluxo de Interação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-validacoes-e-regras" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Validações e Regras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Validações e Regras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-planos-pagamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Planos &amp; Pagamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-privacidade-termos" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Privacidade &amp; Termos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-geral-somente-leitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Geral (somente leitura)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-endpoints-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Endpoints Django
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-estilos-css-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Estilos CSS Principais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-exemplos-de-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Exemplos de Código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Exemplos de Código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-html-item-de-menu-na-sidebar" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 HTML – Item de Menu na Sidebar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-css-mostrar-modal" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 CSS – Mostrar Modal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-js-alternar-abas-de-planos" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 JS – Alternar Abas de Planos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Suporte
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../insights-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Insights
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../onboarding-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Onboarding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Back-End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Back-End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configurações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bibliotecas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/auth-backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Banco de Dados
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Banco de Dados
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/schemas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Esquema e Relações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modelos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Deploy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DevOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tabela-de-conteudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabela de Conteúdo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-proposito-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Propósito &amp; Escopo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-componentes-visuais" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Componentes Visuais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Componentes Visuais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-settings-modal" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Settings Modal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-pagina-de-preferencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Página de Preferências
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-aba-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Aba Geral
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-aba-privacidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Aba Privacidade
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fluxo-de-interacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Fluxo de Interação
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-validacoes-e-regras" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Validações e Regras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Validações e Regras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-planos-pagamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Planos &amp; Pagamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-privacidade-termos" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Privacidade &amp; Termos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-geral-somente-leitura" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Geral (somente leitura)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-endpoints-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Endpoints Django
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-estilos-css-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Estilos CSS Principais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-exemplos-de-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Exemplos de Código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Exemplos de Código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-html-item-de-menu-na-sidebar" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 HTML – Item de Menu na Sidebar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-css-mostrar-modal" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 CSS – Mostrar Modal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-js-alternar-abas-de-planos" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 JS – Alternar Abas de Planos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacao-configuracoes-e-preferencias">Documentação Configurações e Preferências</h1>
+<h2 id="tabela-de-conteudo">Tabela de Conteúdo</h2>
+<ol>
+<li><a href="#1-propósito--escopo">Propósito &amp; Escopo</a></li>
+<li><a href="#2-componentes-visuais">Componentes Visuais</a></li>
+<li><a href="#3-fluxo-de-interação">Fluxo de Interação</a></li>
+<li><a href="#4-validações-e-regras">Validações e Regras</a></li>
+<li><a href="#5-endpoints-django">Endpoints Django</a></li>
+<li><a href="#6-estilos-css-principais">Estilos CSS Principais</a></li>
+<li><a href="#7-exemplos-de-código">Exemplos de Código</a></li>
+</ol>
+<hr />
+<h2 id="1-proposito-escopo">1. Propósito &amp; Escopo</h2>
+<p><strong>Settings Modal</strong> é um <em>overlay</em> leve que concentra atalhos de configuração da conta. Atualmente, apenas <strong>Preferências da Organização</strong> está habilitada; <strong>Preferências Pessoais</strong> e <strong>Relatar Problema</strong> aparecem bloqueadas para indicar futuras funcionalidades.</p>
+<p>A opção <strong>Sair</strong> executa <code>document.getElementById('logout-form').submit()</code> e encerra a sessão.</p>
+<p>Ao selecionar <em>Preferências da Organização</em>, o usuário é redirecionado para uma página full‑screen composta por <strong>Sidebar</strong> e <strong>Container de Conteúdo</strong>. A página oferece três abas principais — <strong>Geral</strong>, <strong>Planos &amp; Pagamentos</strong> e <strong>Privacidade</strong> — implementadas como rotas distintas em Django.</p>
+<hr />
+<h2 id="2-componentes-visuais">2. Componentes Visuais</h2>
+<h3 id="21-settings-modal">2.1 Settings Modal</h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Classe / ID</th>
+<th>Estado</th>
+<th>Papel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modal</td>
+<td><code>#settingsModal.settings-modal</code></td>
+<td><code>.active</code> quando aberto</td>
+<td>Container principal</td>
+</tr>
+<tr>
+<td>Opção Preferências Org.</td>
+<td><code>.settings-option</code> (1ª)</td>
+<td>Ativa</td>
+<td>Linka para <code>/client/preferencias/geral</code></td>
+</tr>
+<tr>
+<td>Opções futuras</td>
+<td><code>.settings-option.locked</code></td>
+<td>Inativa</td>
+<td>Indicadores de roadmap</td>
+</tr>
+<tr>
+<td>Sair</td>
+<td><code>.settings-option</code></td>
+<td>Ativa</td>
+<td>Submete <code>logout-form</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-pagina-de-preferencias">2.2 Página de Preferências</h3>
+<ul>
+<li><strong>Sidebar</strong> (<code>.preferences-sidebar</code>) com itens list (<code>li</code>) que recebem <code>.active</code> conforme rota. - <strong>Container</strong> (<code>.preferences-container</code>) responsável por renderizar cada aba. </li>
+<li><strong>Menu local</strong> nas abas <strong>Planos</strong> e <strong>Privacidade</strong> usa <code>.menu .item</code> (hover/selected). </li>
+</ul>
+<h3 id="23-aba-geral">2.3 Aba <strong>Geral</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Classe / ID</th>
+<th>Papel/Conteúdo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Painel Geral</td>
+<td><code>.org-info</code></td>
+<td>Caixa branca com 2 colunas — <strong>label</strong> (à esquerda) e <strong>content</strong> (à direita). Lista: Organização, ID, URL, Plano.</td>
+</tr>
+<tr>
+<td>Botão Ver Planos</td>
+<td><code>.label .button</code></td>
+<td>Redireciona para rota <strong>Planos &amp; Pagamentos</strong> (<code>/client/preferencias/planos-e-pagamentos</code>).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24-aba-privacidade">2.4 Aba <strong>Privacidade</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Classe / ID</th>
+<th>Papel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Título</td>
+<td><code>.title</code></td>
+<td>Texto “Privacidade” + data de atualização.</td>
+</tr>
+<tr>
+<td>Menu</td>
+<td><code>.menu .item</code></td>
+<td>Alterna entre <strong>Política de Privacidade</strong> (<code>#privacy-policy</code>) e <strong>Termos de Uso</strong> (<code>#terms-of-use</code>). Cada item recebe <code>.active</code> quando selecionado.</td>
+</tr>
+<tr>
+<td>Seções</td>
+<td><code>#privacy-policy</code>, <code>#terms-of-use</code></td>
+<td>Conteúdo extenso com <code>&lt;h2&gt;</code>/<code>&lt;h3&gt;</code> para LGPD, direitos do usuário, etc.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-fluxo-de-interacao">3. Fluxo de Interação</h2>
+<ol>
+<li><strong>Usuário clica</strong> no ícone de engrenagem → <code>#settingsModal</code> aparece com animação <em>fade‑in</em> (<code>opacity 0.3s</code>). </li>
+<li>Seleção de <strong>Preferências da Organização</strong> redireciona para <code>/client/preferencias/geral</code> (rota nomeada <code>client_general_preferences</code>).</li>
+<li>Dentro da página:</li>
+<li><strong>Sidebar</strong> mantém navegação persistente; clique em <strong>Planos e Pagamentos</strong> ou <strong>Privacidade</strong> carrega nova rota, preservando layout.</li>
+<li>Abas internas (ex.: <code>btnPlans</code> ↔ <code>btnPayments</code>) alternam blocos <code>#plansContainer</code> e <code>#paymentsContainer</code> via JS simples. 4. O botão <strong>Sair</strong> (no modal) fecha a sessão e redireciona para <code>/login</code>.</li>
+</ol>
+<hr />
+<h2 id="4-validacoes-e-regras">4. Validações e Regras</h2>
+<h3 id="41-planos-pagamentos">4.1 Planos &amp; Pagamentos</h3>
+<ul>
+<li><strong>Comutador de Compromisso</strong> (<code>.plan-switch-item</code>) troca estados <code>.active-left</code> / <code>.active-right</code>. Somente um lado pode ficar ativo; a troca ajusta preço e selo <strong>MELHOR VALOR</strong> dinamicamente. </li>
+<li>Botão <strong>Comprar agora</strong> (<code>.plan-button.buy-now</code>) fica cinza quando plano é <em>Plano Atual</em>; torna‑se verde (<code>#23ce6b</code>) e clicável quando plano disponível. </li>
+<li><strong>Popover</strong> de valores usa <code>data-bs-toggle="popover"</code> do Bootstrap para detalhar impostos. </li>
+</ul>
+<h3 id="42-privacidade-termos">4.2 Privacidade &amp; Termos</h3>
+<ul>
+<li>Tabs internas controladas por JS: clique em <code>btnPolicy</code>/<code>btnTerms</code> adiciona <code>.active</code> e alterna blocos <code>#privacy-policy</code> / <code>#terms-of-use</code>.</li>
+</ul>
+<h3 id="43-geral-somente-leitura">4.3 Geral (somente leitura)</h3>
+<ul>
+<li>Todos os campos exibem dados da organização; <strong>não</strong> há inputs editáveis.  </li>
+<li>Único elemento interativo é <strong>Ver Planos</strong>, que faz <code>window.location.href='/client/preferencias/planos-e-pagamentos'</code>.</li>
+</ul>
+<hr />
+<h2 id="5-endpoints-django">5. Endpoints Django</h2>
+<table>
+<thead>
+<tr>
+<th>Ação</th>
+<th>URL Name</th>
+<th>Método</th>
+<th>CSRF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atualizar preferência de notificação</td>
+<td><code>client_app:update_notification_preference</code></td>
+<td><code>POST</code> (JSON)</td>
+<td>Header <code>X-CSRFToken</code></td>
+</tr>
+<tr>
+<td>Planos / Pagamentos</td>
+<td><code>client_plans_preferences</code></td>
+<td><code>GET</code></td>
+<td>automático</td>
+</tr>
+<tr>
+<td>Privacidade</td>
+<td><code>client_privacy_preferences</code></td>
+<td><code>GET</code></td>
+<td>automático</td>
+</tr>
+<tr>
+<td>Geral</td>
+<td><code>client_general_preferences</code></td>
+<td><code>GET</code></td>
+<td>automático</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-estilos-css-principais">6. Estilos CSS Principais</h2>
+<ul>
+<li><strong>Modal</strong>: <code>position: fixed</code>, <code>width: 260px</code>, <code>border-radius: 5px</code>, sombra leve. </li>
+<li><strong>Sidebar</strong>: largura fixa <code>326px</code>, <code>background-color: #dfdfdf</code>, hover com <code>#cdf8e8</code>. </li>
+<li><strong>Tokens de cor</strong>: Verde Primário <code>#23ce6b</code>, Verde Escuro <code>#188c48</code>, Cinza Médio <code>#969696</code>.</li>
+</ul>
+<hr />
+<h2 id="7-exemplos-de-codigo">7. Exemplos de Código</h2>
+<h3 id="71-html-item-de-menu-na-sidebar">7.1 HTML – Item de Menu na Sidebar</h3>
+<pre><code class="language-html">&lt;li class=&quot;active&quot; id=&quot;geral&quot; onclick=&quot;window.location.href='/client/preferencias/geral'&quot;&gt;
+  &lt;span&gt;Geral&lt;/span&gt;
+&lt;/li&gt;
+</code></pre>
+<h3 id="72-css-mostrar-modal">7.2 CSS – Mostrar Modal</h3>
+<pre><code class="language-css">.settings-modal.active {
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+</code></pre>
+<h3 id="73-js-alternar-abas-de-planos">7.3 JS – Alternar Abas de Planos</h3>
+<pre><code class="language-javascript">btnPlans.addEventListener('click', () =&gt; {
+  btnPlans.classList.add('active');
+  btnPayments.classList.remove('active');
+  plansContainer.style.display = '';
+  paymentsContainer.style.display = 'none';
+});
+</code></pre>
+<hr />
+<blockquote>
+<p><strong>Última atualização:</strong> 06 jul 2025</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
