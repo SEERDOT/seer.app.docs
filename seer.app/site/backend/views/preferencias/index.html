@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../auth-backend/">
+        <link rel="prev" href="../notifications/">
       
       
-        <link rel="next" href="../../../db/schemas/">
+        <link rel="next" href="../../report_app_backend/">
       
       
       <link rel="icon" href="../../../images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Login - seer.app docs</title>
+        <title>Preferências - seer.app docs</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#documentacao-da-view-complete_login" class="md-skip">
+        <a href="#documentacao-das-views-de-preferencias-do-cliente" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Login
+              Preferências
             
           </span>
         </div>
@@ -361,12 +361,104 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../frontend/dashboard-fronted.md" class="md-nav__link">
+      <a href="../../../frontend/pannel-frontend/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Página Painél
+    Página Painel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frontend/report_app_frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frontend/settings-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configurações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frontend/support-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Suporte
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../frontend/notifications-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notificações
     
   </span>
   
@@ -436,12 +528,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../settings/" class="md-nav__link">
+      <a href="../login/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Configurações
+    Login
     
   </span>
   
@@ -459,12 +551,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/" class="md-nav__link">
+      <a href="../onboarding/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    API
+    Onboarding
     
   </span>
   
@@ -482,12 +574,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/" class="md-nav__link">
+      <a href="../panel/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Bibliotecas
+    Painel
     
   </span>
   
@@ -505,12 +597,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth-backend/" class="md-nav__link">
+      <a href="../relatorios/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Autenticação
+    Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notificações
     
   </span>
   
@@ -542,7 +657,7 @@
   
   
   <span class="md-ellipsis">
-    Login
+    Preferências
     
   </span>
   
@@ -555,7 +670,7 @@
   
   
   <span class="md-ellipsis">
-    Login
+    Preferências
     
   </span>
   
@@ -578,69 +693,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#visao-geral" class="md-nav__link">
+  <a href="#1-client_general_preferencesrequest" class="md-nav__link">
     <span class="md-ellipsis">
-      Visão Geral
+      1. client_general_preferences(request)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modelos-e-tabelas-utilizados" class="md-nav__link">
+  <a href="#2-client_plans_preferencesrequest" class="md-nav__link">
     <span class="md-ellipsis">
-      Modelos e Tabelas Utilizados
+      2. client_plans_preferences(request)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fluxo-de-execucao-da-view" class="md-nav__link">
+  <a href="#3-client_privacy_preferencesrequest" class="md-nav__link">
     <span class="md-ellipsis">
-      Fluxo de Execução da View
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Fluxo de Execução da View">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-requisicao-get-exibicao-da-pagina" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Requisição GET — Exibição da Página
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-requisicao-post-submissao-do-formulario" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Requisição POST — Submissão do Formulário
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dependencias-e-contexto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dependências e Contexto
+      3. client_privacy_preferences(request)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fluxo-visual-post" class="md-nav__link">
+  <a href="#4-client_profile_preferencesrequest" class="md-nav__link">
     <span class="md-ellipsis">
-      Fluxo Visual (POST)
+      4. client_profile_preferences(request)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-update_notification_preferencerequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. update_notification_preference(request)
     </span>
   </a>
   
@@ -659,6 +750,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../report_app_backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Relatórios
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -723,35 +837,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../db/schemas/" class="md-nav__link">
+      <a href="../../../db/report_app_database/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Esquema e Relações
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../db/models/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Modelos
+    Página Relatórios
     
   </span>
   
@@ -765,72 +856,6 @@
           </ul>
         </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../testing/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Testes
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../deployment/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Deploy
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../devops/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    DevOps
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -862,69 +887,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#visao-geral" class="md-nav__link">
+  <a href="#1-client_general_preferencesrequest" class="md-nav__link">
     <span class="md-ellipsis">
-      Visão Geral
+      1. client_general_preferences(request)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modelos-e-tabelas-utilizados" class="md-nav__link">
+  <a href="#2-client_plans_preferencesrequest" class="md-nav__link">
     <span class="md-ellipsis">
-      Modelos e Tabelas Utilizados
+      2. client_plans_preferences(request)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fluxo-de-execucao-da-view" class="md-nav__link">
+  <a href="#3-client_privacy_preferencesrequest" class="md-nav__link">
     <span class="md-ellipsis">
-      Fluxo de Execução da View
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Fluxo de Execução da View">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-requisicao-get-exibicao-da-pagina" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Requisição GET — Exibição da Página
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-requisicao-post-submissao-do-formulario" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Requisição POST — Submissão do Formulário
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dependencias-e-contexto" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dependências e Contexto
+      3. client_privacy_preferences(request)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fluxo-visual-post" class="md-nav__link">
+  <a href="#4-client_profile_preferencesrequest" class="md-nav__link">
     <span class="md-ellipsis">
-      Fluxo Visual (POST)
+      4. client_profile_preferences(request)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-update_notification_preferencerequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. update_notification_preference(request)
     </span>
   </a>
   
@@ -955,111 +956,63 @@
 
 
 
-<h1 id="documentacao-da-view-complete_login">Documentação da View <code>complete_login</code></h1>
-<h2 id="visao-geral">Visão Geral</h2>
-<p>A view <code>complete_login</code> é um componente essencial no processo de autenticação de um sistema <strong>multi-tenant</strong>. Ela representa a <strong>segunda etapa de um login em duas fases</strong>: após o usuário ser identificado, essa view recebe a senha, valida a existência da empresa (tenant) via subdomínio e autentica as credenciais do usuário no schema correto daquela empresa.</p>
+<h1 id="documentacao-das-views-de-preferencias-do-cliente">Documentação das Views de Preferências do Cliente</h1>
+<p>As funções de preferência da aplicação permitem que o usuário visualize e configure informações relacionadas à sua conta, plano, perfil, privacidade e notificações. Também contemplam envio de sugestões, pedidos de suporte e integrações.</p>
 <hr />
-<h2 id="modelos-e-tabelas-utilizados">Modelos e Tabelas Utilizados</h2>
+<h2 id="1-client_general_preferencesrequest"><em>1. client_general_preferences(request)</em></h2>
+<p><strong>Descrição:</strong>  </p>
+<p>Renderiza a página de preferências gerais do cliente.</p>
+<p><strong>Detalhes:</strong></p>
 <ul>
-<li>
-<p><strong>Client (Tenant)</strong>: Modelo principal do <code>django-tenants</code>, representa uma empresa/cliente. Serve para identificar o schema (banco de dados) com base no subdomínio acessado.</p>
-</li>
-<li>
-<p><strong>User (Usuário)</strong>: Modelo de usuário do Django (padrão ou customizado). A autenticação verifica as credenciais dentro do schema do tenant ativo.</p>
-</li>
+<li>Requer autenticação (<code>@login_required</code>)</li>
+<li>Passa o objeto <code>tenant</code> para o template</li>
 </ul>
+<p><strong>Template:</strong> </p>
+<p><code>client_app/app/general-preferences.html</code></p>
 <hr />
-<h2 id="fluxo-de-execucao-da-view">Fluxo de Execução da View</h2>
-<h3 id="1-requisicao-get-exibicao-da-pagina">1. Requisição GET — Exibição da Página</h3>
-<p><strong>Objetivo:</strong> Renderizar a página para o usuário digitar sua senha.</p>
-<p><strong>Processo:</strong></p>
-<ol>
-<li>O usuário é redirecionado para essa view após a primeira etapa de login (identificação do username).</li>
-<li>A função renderiza o template <code>client_app/auth/complete_login.html</code>.</li>
-<li>O username é passado no contexto do template (ex: "Olá, fulano. Por favor, digite sua senha.").</li>
-</ol>
+<h2 id="2-client_plans_preferencesrequest"><em>2. client_plans_preferences(request)</em></h2>
+<p><strong>Descrição:</strong>  </p>
+<p>Renderiza a página com preferências de plano do cliente, com base no subdomínio.</p>
+<p><strong>Detalhes:</strong></p>
+<ul>
+<li>Requer autenticação (<code>@login_required</code>)</li>
+<li>Busca <code>tenant</code> via subdomínio (<code>request.get_host()</code>)</li>
+<li>Redireciona com erro se o cliente não for encontrado</li>
+</ul>
+<p><strong>Template:</strong>  </p>
+<p><code>client_app/app/plans-preferences.html</code></p>
 <hr />
-<h3 id="2-requisicao-post-submissao-do-formulario">2. Requisição POST — Submissão do Formulário</h3>
-<p><strong>Objetivo:</strong> Validar a senha, o tenant e efetuar o login.</p>
-<p><strong>Processo:</strong></p>
-<ol>
-<li>
-<p><strong>Coleta de Dados</strong>  </p>
-<ul>
-<li>A senha é extraída do <code>request.POST</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>Identificação do Tenant</strong>  </p>
-<ul>
-<li>O host da requisição (ex: <code>empresa-a.seusite.com</code>) é capturado.</li>
-<li>O subdomínio (ex: <code>empresa-a</code>) é isolado e usado como <code>schema_name</code>.</li>
-<li>O sistema tenta buscar um objeto <code>Client</code> correspondente a esse <code>schema_name</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>Validação do Tenant</strong>  </p>
-<ul>
-<li>Se não for encontrado, exibe-se uma mensagem de erro ("Empresa inexistente") e o usuário é redirecionado para a página de login pública.</li>
-</ul>
-</li>
-<li>
-<p><strong>Ativação do Schema do Tenant</strong>  </p>
-<ul>
-<li>Se o tenant existir, o sistema troca o schema de banco de dados para o da empresa com <code>schema_context()</code>. A partir daí, todas as operações de banco de dados ocorrerão <strong>somente dentro daquele tenant</strong>.</li>
-</ul>
-</li>
-<li>
-<p><strong>Autenticação do Usuário</strong>  </p>
-<ul>
-<li>A função <code>authenticate()</code> é chamada com o <code>username</code> e a <code>password</code>.</li>
-<li>
-<p>Se a autenticação for bem-sucedida:</p>
-<ul>
-<li>A função <code>login()</code> é chamada para iniciar a sessão.</li>
-<li>O usuário é redirecionado para a página principal da empresa (<code>client_app:client_home</code>).</li>
-</ul>
-</li>
-<li>
-<p>Se falhar:</p>
-<ul>
-<li>Uma mensagem de erro ("Usuário ou senha incorretos") é exibida.</li>
-<li>O usuário é redirecionado para a página de login pública.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
+<h2 id="3-client_privacy_preferencesrequest"><em>3. client_privacy_preferences(request)</em></h2>
+<p><strong>Descrição:</strong>  </p>
+<p>Renderiza a página com políticas de privacidade e configurações relacionadas.</p>
+<p><strong>Template:</strong>  </p>
+<p><code>client_app/app/privacy_preferences.html</code></p>
 <hr />
-<h2 id="dependencias-e-contexto">Dependências e Contexto</h2>
+<h2 id="4-client_profile_preferencesrequest"><em>4. client_profile_preferences(request)</em></h2>
+<p><strong>Descrição:</strong>  </p>
+<p>Renderiza a página de preferências de perfil do cliente, incluindo informações do usuário e do perfil da empresa.</p>
+<p><strong>Detalhes:</strong></p>
 <ul>
-<li>
-<p><strong>django-tenants</strong>: Biblioteca que permite multi-tenancy no Django. A identificação do schema e uso do <code>schema_context()</code> são cruciais para garantir a separação entre empresas.</p>
-</li>
-<li>
-<p><strong>Autenticação Django</strong>: Usa <code>authenticate()</code> e <code>login()</code> do módulo <code>django.contrib.auth</code>.</p>
-</li>
-<li>
-<p><strong>Framework de Mensagens</strong>: Usa <code>messages.error()</code> para exibir mensagens de erro sem interromper o fluxo.</p>
-</li>
+<li>Requer autenticação (<code>@login_required</code>)</li>
+<li>Usa <code>schema_context</code> para carregar/criar <code>TenantProfile</code></li>
+</ul>
+<p><strong>Template:</strong>  </p>
+<p><code>client_app/app/profile_preferences.html</code></p>
+<hr />
+<h2 id="5-update_notification_preferencerequest"><em>5. update_notification_preference(request)</em></h2>
+<p><strong>Descrição:</strong>  </p>
+<p>Atualiza a preferência do usuário para receber notificações por e-mail.</p>
+<p><strong>Detalhes:</strong></p>
+<ul>
+<li>Método: <code>POST</code></li>
+<li>Requer autenticação</li>
+<li>Espera um JSON com <code>"enabled"</code> (booleano)</li>
+<li>Atualiza o campo <code>mail_notifications</code> no modelo do usuário</li>
+<li>Retorna JSON com status da operação</li>
 </ul>
 <hr />
-<h2 id="fluxo-visual-post">Fluxo Visual (POST)</h2>
-<pre><code class="language-mermaid">graph TD
-    A[Início: Usuário envia POST com senha] --&gt; B{Identificar Tenant pelo Subdomínio}
-    B --&gt; C{Tenant Existe?}
-    C -- Sim --&gt; D[Ativar Schema do Tenant]
-    D --&gt; E{Autenticar Usuário no Schema}
-    E -- Sucesso --&gt; F[Login do Usuário]
-    F --&gt; G[Redirecionar para Home do Cliente]
-    E -- Falha --&gt; H[Erro: Usuário ou Senha Incorretos]
-    H --&gt; I[Redirecionar para Login Público]
-    C -- Não --&gt; J[Erro: Empresa Inexistente]
-    J --&gt; I
-</code></pre>
-<hr />
-<h2 id="consideracoes-finais">Considerações Finais</h2>
-<p>A função complete_login é uma implementação robusta e segura para o login em ambientes multi-tenant. Ela garante a separação lógica e de dados entre os diferentes clientes da plataforma, direcionando corretamente a tentativa de autenticação para o banco de dados isolado da empresa correspondente, o que é um pilar fundamental de segurança e funcionamento para este tipo de arquitetura.</p>
+<h2 id="consideracoes-finais"><em>Considerações Finais</em></h2>
+<p>As views de preferências são essenciais para garantir uma experiência personalizada e controlada para cada cliente da plataforma. Elas oferecem pontos de entrada simples, porém funcionais, para futuras extensões e integrações com bases de dados e serviços externos.</p>
 
 
 

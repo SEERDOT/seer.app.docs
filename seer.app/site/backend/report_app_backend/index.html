@@ -1,0 +1,1456 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../views/preferencias/">
+      
+      
+        <link rel="next" href="../../db/report_app_database/">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Página Relatórios - seer.app docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Exo 2";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacao-do-backend-do-fluxo-de-relatorios-report_app" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="seer.app docs" class="md-header__button md-logo" aria-label="seer.app docs" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            seer.app docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Página Relatórios
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="seer.app docs" class="md-nav__button md-logo" aria-label="seer.app docs" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    seer.app docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Front-End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Front-End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/base-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elementos Base
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/components-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/home-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/auth-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Login e Registro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/pannel-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Painel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/report_app_frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/settings-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configurações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/support-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Suporte
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/notifications-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notificações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Back-End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Back-End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../views/login/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Login
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../views/onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Onboarding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../views/panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Painel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../views/relatorios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../views/notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notificações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../views/preferencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Preferências
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Página Relatórios
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Relatórios
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principais-views-e-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principais Views e Endpoints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detalhamento-das-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detalhamento das Views
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhamento das Views">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-criacao-de-reportdraft-escolha-do-modelo-modelos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Criação de ReportDraft (Escolha do Modelo) — modelos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configuracao-de-metadados-metadados" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Configuração de Metadados — metadados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-selecao-de-indicadores-indicadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Seleção de Indicadores — indicadores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-selecao-de-visualizacoes-visualizacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Seleção de Visualizações — visualizacoes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-definicao-de-destinatarios-e-canais-destinatarios_canais" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Definição de Destinatários e Canais — destinatarios_canais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-configuracao-de-agendamento-agendamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Configuração de Agendamento — agendamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-revisao-confirmacao-e-agendamento-final-revisao" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Revisão, Confirmação e Agendamento Final — revisao
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-listagem-e-detalhamento-de-relatorios-relatorios-relatorio_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Listagem e Detalhamento de Relatórios — relatorios, relatorio_detail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-edicao-de-relatorio-editar_relatorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Edição de Relatório — editar_relatorio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-views-auxiliares" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Views Auxiliares
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Views Auxiliares">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cancelar-rascunho-cancelar_draft" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cancelar Rascunho — cancelar_draft
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desativar-relatorio-disable_schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desativar Relatório — disable_schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excluir-relatorio-delete_schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excluir Relatório — delete_schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desativar-multiplos-relatorios-disable_schedules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desativar Múltiplos Relatórios — disable_schedules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excluir-multiplos-relatorios-delete_schedules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excluir Múltiplos Relatórios — delete_schedules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reativar-relatorios-reactivate_schedules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reativar Relatórios — reactivate_schedules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observações
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Banco de Dados
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Banco de Dados
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/report_app_database/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principais-views-e-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principais Views e Endpoints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detalhamento-das-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detalhamento das Views
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhamento das Views">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-criacao-de-reportdraft-escolha-do-modelo-modelos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Criação de ReportDraft (Escolha do Modelo) — modelos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-configuracao-de-metadados-metadados" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Configuração de Metadados — metadados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-selecao-de-indicadores-indicadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Seleção de Indicadores — indicadores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-selecao-de-visualizacoes-visualizacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Seleção de Visualizações — visualizacoes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-definicao-de-destinatarios-e-canais-destinatarios_canais" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Definição de Destinatários e Canais — destinatarios_canais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-configuracao-de-agendamento-agendamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Configuração de Agendamento — agendamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-revisao-confirmacao-e-agendamento-final-revisao" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Revisão, Confirmação e Agendamento Final — revisao
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-listagem-e-detalhamento-de-relatorios-relatorios-relatorio_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Listagem e Detalhamento de Relatórios — relatorios, relatorio_detail
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-edicao-de-relatorio-editar_relatorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Edição de Relatório — editar_relatorio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-views-auxiliares" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Views Auxiliares
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Views Auxiliares">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cancelar-rascunho-cancelar_draft" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cancelar Rascunho — cancelar_draft
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desativar-relatorio-disable_schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desativar Relatório — disable_schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excluir-relatorio-delete_schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excluir Relatório — delete_schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desativar-multiplos-relatorios-disable_schedules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desativar Múltiplos Relatórios — disable_schedules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#excluir-multiplos-relatorios-delete_schedules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Excluir Múltiplos Relatórios — delete_schedules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reativar-relatorios-reactivate_schedules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reativar Relatórios — reactivate_schedules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observações
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacao-do-backend-do-fluxo-de-relatorios-report_app">Documentação do Backend do Fluxo de Relatórios (<code>report_app</code>)</h1>
+<h2 id="visao-geral">Visão Geral</h2>
+<p>Este documento detalha as views, endpoints e a lógica de processamento do backend responsável pelo ciclo de vida dos relatórios customizados.</p>
+<hr />
+<h2 id="principais-views-e-endpoints">Principais Views e Endpoints</h2>
+<ol>
+<li><strong>Criação de ReportDraft (Escolha do Modelo)</strong></li>
+<li><strong>Configuração de Metadados</strong></li>
+<li><strong>Seleção de Indicadores</strong></li>
+<li><strong>Seleção de Visualizações</strong></li>
+<li><strong>Definição de Destinatários e Canais</strong></li>
+<li><strong>Configuração de Agendamento</strong></li>
+<li><strong>Revisão, Confirmação e Agendamento Final</strong></li>
+<li><strong>Listagem e Detalhamento de Relatórios</strong></li>
+</ol>
+<hr />
+<h2 id="detalhamento-das-views">Detalhamento das Views</h2>
+<h3 id="1-criacao-de-reportdraft-escolha-do-modelo-modelos">1. <strong>Criação de ReportDraft (Escolha do Modelo) — <code>modelos</code></strong></h3>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/modelos/</code></li>
+<li><strong>Métodos:</strong> <code>GET</code>, <code>POST</code></li>
+<li><strong>Lógica:</strong></li>
+<li><code>GET</code>: Exibe os modelos disponíveis para o usuário escolher (ou iniciar em branco).</li>
+<li><code>POST</code>: <ul>
+<li>Se o usuário escolher "rascunho em branco", cria um novo <code>ReportDraft</code> e redireciona para a etapa de metadados.</li>
+<li>Se escolher um modelo, cria um <code>ReportDraft</code> já pré-preenchido com os dados do template, indicadores e visualizações, e redireciona para a etapa de destinatários.</li>
+</ul>
+</li>
+<li><strong>Contexto enviado ao template:</strong> modelos, categorias, passo atual.</li>
+</ul>
+<hr />
+<h3 id="2-configuracao-de-metadados-metadados">2. <strong>Configuração de Metadados — <code>metadados</code></strong></h3>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/metadados/&lt;draft_id&gt;/</code></li>
+<li><strong>Métodos:</strong> <code>GET</code>, <code>POST</code></li>
+<li><strong>Lógica:</strong></li>
+<li><code>GET</code>: Exibe formulário para preenchimento de título, categoria e descrição.</li>
+<li><code>POST</code>: Valida e salva os metadados no <code>draft_config</code> do <code>ReportDraft</code>, atualiza status e redireciona para seleção de indicadores.</li>
+<li><strong>Contexto enviado ao template:</strong> draft, formulário, passo atual.</li>
+</ul>
+<hr />
+<h3 id="3-selecao-de-indicadores-indicadores">3. <strong>Seleção de Indicadores — <code>indicadores</code></strong></h3>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/indicadores/&lt;draft_id&gt;/</code></li>
+<li><strong>Métodos:</strong> <code>GET</code>, <code>POST</code></li>
+<li><strong>Lógica:</strong></li>
+<li><code>GET</code>: Lista indicadores disponíveis conforme a categoria do relatório.</li>
+<li><code>POST</code>: Salva os indicadores selecionados, atualiza status e redireciona para seleção de visualizações.</li>
+<li><strong>Contexto enviado ao template:</strong> draft, indicadores, indicadores já selecionados, passo atual.</li>
+</ul>
+<hr />
+<h3 id="4-selecao-de-visualizacoes-visualizacoes">4. <strong>Seleção de Visualizações — <code>visualizacoes</code></strong></h3>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/visualizacoes/&lt;draft_id&gt;/</code></li>
+<li><strong>Métodos:</strong> <code>GET</code>, <code>POST</code></li>
+<li><strong>Lógica:</strong></li>
+<li><code>GET</code>: Lista visualizações permitidas para a categoria do relatório.</li>
+<li><code>POST</code>: Salva as visualizações selecionadas, atualiza status e redireciona para definição de destinatários.</li>
+<li><strong>Contexto enviado ao template:</strong> draft, visualizações, visualizações já selecionadas, passo atual.</li>
+</ul>
+<hr />
+<h3 id="5-definicao-de-destinatarios-e-canais-destinatarios_canais">5. <strong>Definição de Destinatários e Canais — <code>destinatarios_canais</code></strong></h3>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/destinatarios_canais/&lt;draft_id&gt;/</code></li>
+<li><strong>Métodos:</strong> <code>GET</code>, <code>POST</code></li>
+<li><strong>Lógica:</strong></li>
+<li><code>GET</code>: Exibe formulário para adicionar e-mails dos destinatários.</li>
+<li><code>POST</code>: Salva os destinatários no <code>draft_config</code>, atualiza status e redireciona para agendamento.</li>
+<li><strong>Contexto enviado ao template:</strong> draft, passo atual.</li>
+</ul>
+<hr />
+<h3 id="6-configuracao-de-agendamento-agendamentos">6. <strong>Configuração de Agendamento — <code>agendamentos</code></strong></h3>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/agendamentos/&lt;draft_id&gt;/</code></li>
+<li><strong>Métodos:</strong> <code>GET</code>, <code>POST</code></li>
+<li><strong>Lógica:</strong></li>
+<li><code>GET</code>: Exibe formulário para configurar frequência, dias e horários de envio.</li>
+<li><code>POST</code>: Salva as configurações de agendamento no <code>draft_config</code>, atualiza status e redireciona para revisão.</li>
+<li><strong>Contexto enviado ao template:</strong> draft, agendamento atual, labels de dias/meses/horas, passo atual.</li>
+</ul>
+<hr />
+<h3 id="7-revisao-confirmacao-e-agendamento-final-revisao">7. <strong>Revisão, Confirmação e Agendamento Final — <code>revisao</code></strong></h3>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/revisao/&lt;draft_id&gt;/</code></li>
+<li><strong>Métodos:</strong> <code>GET</code>, <code>POST</code></li>
+<li><strong>Lógica:</strong></li>
+<li><code>GET</code>: Exibe resumo de todas as escolhas feitas nas etapas anteriores.</li>
+<li><code>POST</code>: Valida e cria um novo <code>ReportSchedule</code> consolidando todas as configurações, deleta o <code>ReportDraft</code> e redireciona para a listagem de relatórios.</li>
+<li>Retorna JSON com status de sucesso ou erro de validação.</li>
+<li><strong>Contexto enviado ao template:</strong> draft, agendamento, texto de frequência, passo atual.</li>
+</ul>
+<hr />
+<h3 id="8-listagem-e-detalhamento-de-relatorios-relatorios-relatorio_detail">8. <strong>Listagem e Detalhamento de Relatórios — <code>relatorios</code>, <code>relatorio_detail</code></strong></h3>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/</code> e <code>/relatorios/&lt;schedule_id&gt;/</code></li>
+<li><strong>Métodos:</strong> <code>GET</code></li>
+<li><strong>Lógica:</strong></li>
+<li><code>relatorios</code>: Lista todos os relatórios agendados, com filtros por categoria, busca e status (ativo/inativo).</li>
+<li><code>relatorio_detail</code>: Exibe detalhes completos de um relatório agendado, incluindo metadados, indicadores, visualizações e histórico de envios.</li>
+<li><strong>Contexto enviado ao template:</strong> lista de relatórios, filtros, dados detalhados do relatório.</li>
+</ul>
+<hr />
+<h3 id="9-edicao-de-relatorio-editar_relatorio">9. <strong>Edição de Relatório — <code>editar_relatorio</code></strong></h3>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/editar/&lt;schedule_id&gt;/</code></li>
+<li><strong>Método:</strong> <code>POST</code> (requisição AJAX, espera JSON)</li>
+<li><strong>Lógica:</strong></li>
+<li>Recebe dados atualizados de metadados, indicadores, visualizações, agendamento e destinatários.</li>
+<li>Atualiza o objeto <code>ReportSchedule</code> correspondente, salvando as alterações em <code>layout_config</code> e <code>schedule_config</code>.</li>
+<li>Retorna JSON com status de sucesso ou erro.</li>
+<li><strong>Uso:</strong> Permite ao usuário editar relatórios já agendados sem precisar criar um novo do zero.</li>
+</ul>
+<hr />
+<h3 id="10-views-auxiliares">10. <strong>Views Auxiliares</strong></h3>
+<h4 id="cancelar-rascunho-cancelar_draft"><strong>Cancelar Rascunho — <code>cancelar_draft</code></strong></h4>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/cancelar_draft/&lt;draft_id&gt;/</code></li>
+<li><strong>Método:</strong> <code>POST</code></li>
+<li><strong>Lógica:</strong> Exclui o <code>ReportDraft</code> correspondente e redireciona para a listagem de relatórios.</li>
+<li><strong>Uso:</strong> Permite ao usuário abandonar o fluxo de criação de relatório e descartar o rascunho.</li>
+</ul>
+<hr />
+<h4 id="desativar-relatorio-disable_schedule"><strong>Desativar Relatório — <code>disable_schedule</code></strong></h4>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/disable_schedule/&lt;schedule_id&gt;/</code></li>
+<li><strong>Método:</strong> <code>POST</code></li>
+<li><strong>Lógica:</strong> Marca o <code>ReportSchedule</code> como inativo (<code>is_active = False</code>) e salva.</li>
+<li><strong>Uso:</strong> Permite ao usuário desativar relatórios agendados sem excluí-los.</li>
+</ul>
+<hr />
+<h4 id="excluir-relatorio-delete_schedule"><strong>Excluir Relatório — <code>delete_schedule</code></strong></h4>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/delete_schedule/&lt;schedule_id&gt;/</code></li>
+<li><strong>Método:</strong> <code>POST</code></li>
+<li><strong>Lógica:</strong> Exclui o <code>ReportSchedule</code> do banco de dados e redireciona para a aba de inativos.</li>
+<li><strong>Uso:</strong> Permite ao usuário remover permanentemente um relatório agendado.</li>
+</ul>
+<hr />
+<h4 id="desativar-multiplos-relatorios-disable_schedules"><strong>Desativar Múltiplos Relatórios — <code>disable_schedules</code></strong></h4>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/disable_schedules/</code></li>
+<li><strong>Método:</strong> <code>POST</code></li>
+<li><strong>Lógica:</strong> Recebe uma lista de IDs e marca todos os <code>ReportSchedule</code> correspondentes como inativos.</li>
+<li><strong>Uso:</strong> Ação em massa para desativar vários relatórios de uma vez.</li>
+</ul>
+<hr />
+<h4 id="excluir-multiplos-relatorios-delete_schedules"><strong>Excluir Múltiplos Relatórios — <code>delete_schedules</code></strong></h4>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/delete_schedules/</code></li>
+<li><strong>Método:</strong> <code>POST</code></li>
+<li><strong>Lógica:</strong> Recebe uma lista de IDs e exclui todos os <code>ReportSchedule</code> correspondentes.</li>
+<li><strong>Uso:</strong> Ação em massa para excluir vários relatórios de uma vez.</li>
+</ul>
+<hr />
+<h4 id="reativar-relatorios-reactivate_schedules"><strong>Reativar Relatórios — <code>reactivate_schedules</code></strong></h4>
+<ul>
+<li><strong>Endpoint:</strong> <code>/relatorios/reactivate_schedules/</code></li>
+<li><strong>Método:</strong> <code>POST</code></li>
+<li><strong>Lógica:</strong> Recebe uma lista de IDs e marca todos os <code>ReportSchedule</code> correspondentes como ativos (<code>is_active = True</code>).</li>
+<li><strong>Uso:</strong> Permite reativar relatórios previamente desativados. </li>
+</ul>
+<hr />
+<h2 id="observacoes">Observações</h2>
+<ul>
+<li>Algumas funcionalidades, como edição e envio automático, ainda estão em desenvolvimento. </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

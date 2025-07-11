@@ -1,0 +1,1465 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../backend/report_app_backend/">
+      
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Página Relatórios - seer.app docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Exo 2";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacao-do-banco-de-dados-do-fluxo-de-relatorios-report_app" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="seer.app docs" class="md-header__button md-logo" aria-label="seer.app docs" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            seer.app docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Página Relatórios
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="seer.app docs" class="md-nav__button md-logo" aria-label="seer.app docs" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    seer.app docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Front-End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Front-End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/base-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elementos Base
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/components-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Componentes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/home-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/auth-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Login e Registro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/pannel-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Painel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/report_app_frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/settings-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configurações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/support-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Suporte
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../frontend/notifications-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notificações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Back-End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Back-End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/views/login/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Login
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/views/onboarding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Onboarding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/views/panel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Painel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/views/relatorios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/views/notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notificações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/views/preferencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Preferências
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backend/report_app_backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Relatórios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Banco de Dados
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Banco de Dados
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Página Relatórios
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Relatórios
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Models Principais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esquemas-e-relacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esquemas e Relações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Esquemas e Relações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detalhamento-dos-models-e-relacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detalhamento dos Models e Relações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhamento dos Models e Relações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indicator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indicator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizationtype" class="md-nav__link">
+    <span class="md-ellipsis">
+      VisualizationType
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reporttemplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportTemplate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reportdraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportDraft
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reportdraftindicator" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportDraftIndicator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reportdraftvisualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportDraftVisualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reportschedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportSchedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reportschedulehistory" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportScheduleHistory
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relacoes-resumidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relações Resumidas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-er-entidade-relacionamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagrama ER (Entidade-Relacionamento)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-de-json-de-configuracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos de JSON de Configuração
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemplos de JSON de Configuração">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-template_config-em-reporttemplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de template_config em ReportTemplate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-draft_config-em-reportdraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de draft_config em ReportDraft
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-layout_config-e-schedule_config-em-reportschedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de layout_config e schedule_config em ReportSchedule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observações
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Models Principais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esquemas-e-relacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esquemas e Relações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Esquemas e Relações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detalhamento-dos-models-e-relacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detalhamento dos Models e Relações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detalhamento dos Models e Relações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indicator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indicator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualizationtype" class="md-nav__link">
+    <span class="md-ellipsis">
+      VisualizationType
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reporttemplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportTemplate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reportdraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportDraft
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reportdraftindicator" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportDraftIndicator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reportdraftvisualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportDraftVisualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reportschedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportSchedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reportschedulehistory" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportScheduleHistory
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relacoes-resumidas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relações Resumidas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrama-er-entidade-relacionamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagrama ER (Entidade-Relacionamento)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplos-de-json-de-configuracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplos de JSON de Configuração
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemplos de JSON de Configuração">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-template_config-em-reporttemplate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de template_config em ReportTemplate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-draft_config-em-reportdraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de draft_config em ReportDraft
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-layout_config-e-schedule_config-em-reportschedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de layout_config e schedule_config em ReportSchedule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observações
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacao-do-banco-de-dados-do-fluxo-de-relatorios-report_app">Documentação do Banco de Dados do Fluxo de Relatórios (<code>report_app</code>)</h1>
+<h2 id="visao-geral">Visão Geral</h2>
+<p>Este documento detalha os models, esquemas e relações do banco de dados utilizados no ciclo de vida dos relatórios customizados.</p>
+<hr />
+<h2 id="models-principais">Models Principais</h2>
+<ul>
+<li>Indicator</li>
+<li>VisualizationType</li>
+<li>ReportTemplate</li>
+<li>ReportDraft</li>
+<li>ReportDraftIndicator</li>
+<li>ReportDraftVisualization</li>
+<li>ReportSchedule</li>
+<li>ReportScheduleHistory</li>
+</ul>
+<hr />
+<h2 id="esquemas-e-relacoes">Esquemas e Relações</h2>
+<h3 id="detalhamento-dos-models-e-relacoes">Detalhamento dos Models e Relações</h3>
+<h4 id="indicator"><strong>Indicator</strong></h4>
+<ul>
+<li><code>slug</code>: Slug único do indicador (<code>SlugField</code>, unique)</li>
+<li><code>title</code>: Nome do indicador (<code>CharField</code>)</li>
+<li><code>description</code>: Descrição detalhada (<code>TextField</code>)</li>
+<li><code>category</code>: Categoria do indicador (ex: "Leading", "Lagging") (<code>CharField</code>)</li>
+<li><code>data_category</code>: Categoria de dados (ex: "vendas", "financeiro") (<code>CharField</code>)</li>
+<li><code>formula</code>: Fórmula de cálculo (<code>CharField</code>)</li>
+<li><strong>Relações:</strong> Usado em vários drafts e templates via relações auxiliares.</li>
+</ul>
+<hr />
+<h4 id="visualizationtype"><strong>VisualizationType</strong></h4>
+<ul>
+<li><code>slug</code>: Slug único da visualização (<code>SlugField</code>, unique)</li>
+<li><code>title</code>: Nome da visualização (<code>CharField</code>)</li>
+<li><code>description</code>: Descrição (<code>TextField</code>)</li>
+<li><code>chart_category</code>: Tipo de gráfico (ex: "bar", "line") (<code>CharField</code>)</li>
+<li><code>data_category</code>: Categoria de dados associada (<code>CharField</code>)</li>
+<li><strong>Relações:</strong> Usado em vários drafts e templates via relações auxiliares.</li>
+</ul>
+<hr />
+<h4 id="reporttemplate"><strong>ReportTemplate</strong></h4>
+<ul>
+<li><code>tenant</code>: Referência ao cliente/tenant (<code>ForeignKey</code> para Client)</li>
+<li><code>name</code>: Nome interno do template (<code>CharField</code>)</li>
+<li><code>title</code>: Título exibido ao usuário (<code>CharField</code>)</li>
+<li><code>category</code>: Categoria do template (ex: "vendas", "financeiro") (<code>CharField</code>, choices)</li>
+<li><code>description</code>: Descrição (<code>TextField</code>)</li>
+<li><code>template_config</code>: Configuração JSON com indicadores, visualizações, etc. (<code>JSONField</code>)</li>
+<li><strong>Relações:</strong> Pode ser referenciado por vários drafts.</li>
+</ul>
+<hr />
+<h4 id="reportdraft"><strong>ReportDraft</strong></h4>
+<ul>
+<li><code>tenant</code>: Referência ao cliente/tenant (<code>ForeignKey</code>)</li>
+<li><code>user</code>: Usuário criador (<code>ForeignKey</code>)</li>
+<li><code>is_template</code>: Indica se foi criado a partir de um template (<code>BooleanField</code>)</li>
+<li><code>template_ref</code>: Referência ao template usado (<code>ForeignKey</code>, nullable)</li>
+<li><code>title</code>, <code>category</code>, <code>description</code>: Metadados do relatório (<code>CharField</code>/<code>TextField</code>)</li>
+<li><code>status</code>: Status do draft no fluxo de criação (<code>CharField</code>, choices)</li>
+<li><code>draft_config</code>: Configuração incremental do draft (<code>JSONField</code>)</li>
+<li><code>created_at</code>, <code>updated_at</code>: Datas de criação/atualização</li>
+<li><strong>Relações:</strong></li>
+<li><code>draft_indicators</code>: Relação N:N com Indicator via <code>ReportDraftIndicator</code></li>
+<li><code>draft_visualizations</code>: Relação N:N com VisualizationType via <code>ReportDraftVisualization</code></li>
+</ul>
+<hr />
+<h4 id="reportdraftindicator"><strong>ReportDraftIndicator</strong></h4>
+<ul>
+<li><code>draft</code>: Referência ao draft (<code>ForeignKey</code>)</li>
+<li><code>indicator</code>: Referência ao indicador (<code>ForeignKey</code>)</li>
+<li><code>unique_together</code>: Garante que cada indicador só aparece uma vez por draft</li>
+<li><strong>Relações:</strong> Relaciona drafts a indicadores selecionados.</li>
+</ul>
+<hr />
+<h4 id="reportdraftvisualization"><strong>ReportDraftVisualization</strong></h4>
+<ul>
+<li><code>draft</code>: Referência ao draft (<code>ForeignKey</code>)</li>
+<li><code>visualization</code>: Referência à visualização (<code>ForeignKey</code>)</li>
+<li><code>unique_together</code>: Garante que cada visualização só aparece uma vez por draft</li>
+<li><strong>Relações:</strong> Relaciona drafts a visualizações selecionadas.</li>
+</ul>
+<hr />
+<h4 id="reportschedule"><strong>ReportSchedule</strong></h4>
+<ul>
+<li><code>tenant</code>: Referência ao cliente/tenant (<code>ForeignKey</code>)</li>
+<li><code>user</code>: Usuário criador (<code>ForeignKey</code>)</li>
+<li><code>name</code>: Nome do relatório agendado (<code>CharField</code>)</li>
+<li><code>layout_config</code>: Configuração consolidada do relatório (<code>JSONField</code>)</li>
+<li><code>frequency</code>: Frequência de envio (<code>CharField</code>, choices: daily, weekly, monthly)</li>
+<li><code>schedule_config</code>: Parâmetros de agendamento e destinatários (<code>JSONField</code>)</li>
+<li><code>channel</code>: Canal de envio (<code>CharField</code>, choices: email, whatsapp)</li>
+<li><code>is_active</code>: Indica se o agendamento está ativo (<code>BooleanField</code>)</li>
+<li><code>created_at</code>, <code>updated_at</code>: Datas de criação/atualização</li>
+<li><strong>Relações:</strong></li>
+<li><code>history</code>: Histórico de execuções via <code>ReportScheduleHistory</code></li>
+</ul>
+<hr />
+<h4 id="reportschedulehistory"><strong>ReportScheduleHistory</strong></h4>
+<ul>
+<li><code>schedule</code>: Referência ao relatório agendado (<code>ForeignKey</code>)</li>
+<li><code>sent_at</code>: Data/hora do envio (<code>DateTimeField</code>)</li>
+<li><code>status</code>: Status do envio (<code>CharField</code>, choices: sent, error, skipped)</li>
+<li><strong>Relações:</strong> Cada registro pertence a um <code>ReportSchedule</code>.</li>
+</ul>
+<hr />
+<h3 id="relacoes-resumidas">Relações Resumidas</h3>
+<ul>
+<li><strong>ReportTemplate</strong> 1:N <strong>ReportDraft</strong> (via <code>template_ref</code>)</li>
+<li><strong>ReportDraft</strong> N:M <strong>Indicator</strong> (via <code>ReportDraftIndicator</code>)</li>
+<li><strong>ReportDraft</strong> N:M <strong>VisualizationType</strong> (via <code>ReportDraftVisualization</code>)</li>
+<li><strong>ReportSchedule</strong> 1:N <strong>ReportScheduleHistory</strong> </li>
+</ul>
+<hr />
+<h3 id="diagrama-er-entidade-relacionamento">Diagrama ER (Entidade-Relacionamento)</h3>
+<pre><code class="language-mermaid">erDiagram
+    CLIENT ||--o{ REPORTTEMPLATE : &quot;tem&quot;
+    CLIENT ||--o{ REPORTDRAFT : &quot;tem&quot;
+    CLIENT ||--o{ REPORTSCHEDULE : &quot;tem&quot;
+    USER ||--o{ REPORTDRAFT : &quot;cria&quot;
+    USER ||--o{ REPORTSCHEDULE : &quot;cria&quot;
+    REPORTTEMPLATE ||--o{ REPORTDRAFT : &quot;origina&quot;
+    REPORTDRAFT ||--o{ REPORTDRAFTINDICATOR : &quot;usa&quot;
+    INDICATOR ||--o{ REPORTDRAFTINDICATOR : &quot;referenciado&quot;
+    REPORTDRAFT ||--o{ REPORTDRAFTVISUALIZATION : &quot;usa&quot;
+    VISUALIZATIONTYPE ||--o{ REPORTDRAFTVISUALIZATION : &quot;referenciado&quot;
+    REPORTSCHEDULE ||--o{ REPORTSCHEDULEHISTORY : &quot;gera histórico&quot;
+</code></pre>
+<hr />
+<h3 id="exemplos-de-json-de-configuracao">Exemplos de JSON de Configuração</h3>
+<h4 id="exemplo-de-template_config-em-reporttemplate">Exemplo de <code>template_config</code> em <code>ReportTemplate</code></h4>
+<pre><code class="language-json">{
+  &quot;indicators&quot;: [&quot;faturamento-total&quot;, &quot;lucro-bruto&quot;],
+  &quot;visualizations&quot;: [&quot;faturamento-por-tempo&quot;, &quot;lucro-bruto-x-liquido&quot;],
+  &quot;metadata&quot;: {
+    &quot;title&quot;: &quot;Relatório Financeiro Mensal&quot;,
+    &quot;category&quot;: &quot;financeiro&quot;,
+    &quot;description&quot;: &quot;Acompanhamento mensal dos principais KPIs financeiros.&quot;
+  }
+}
+</code></pre>
+<h4 id="exemplo-de-draft_config-em-reportdraft">Exemplo de <code>draft_config</code> em <code>ReportDraft</code></h4>
+<pre><code class="language-json">{
+  &quot;metadata&quot;: {
+    &quot;title&quot;: &quot;Relatório de Vendas&quot;,
+    &quot;category&quot;: &quot;vendas&quot;,
+    &quot;description&quot;: &quot;KPIs de vendas do trimestre.&quot;
+  },
+  &quot;indicators&quot;: [&quot;ticket-medio&quot;, &quot;conversao-geral&quot;],
+  &quot;visualizations&quot;: [&quot;funil-de-vendas&quot;, &quot;vendas-por-canal&quot;],
+  &quot;destinatarios&quot;: [&quot;gestor@empresa.com&quot;, &quot;diretoria@empresa.com&quot;],
+  &quot;schedule&quot;: {
+    &quot;frequency_interval&quot;: 1,
+    &quot;frequency_unit&quot;: &quot;month&quot;,
+    &quot;month_day&quot;: 1,
+    &quot;time_start&quot;: &quot;08:00&quot;,
+    &quot;time_end&quot;: &quot;10:00&quot;
+  }
+}
+</code></pre>
+<h4 id="exemplo-de-layout_config-e-schedule_config-em-reportschedule">Exemplo de <code>layout_config</code> e <code>schedule_config</code> em <code>ReportSchedule</code></h4>
+<pre><code class="language-json">{
+  &quot;layout_config&quot;: {
+    &quot;metadata&quot;: {
+      &quot;title&quot;: &quot;Relatório de Vendas&quot;,
+      &quot;category&quot;: &quot;vendas&quot;,
+      &quot;description&quot;: &quot;KPIs de vendas do trimestre.&quot;
+    },
+    &quot;indicators&quot;: [&quot;ticket-medio&quot;, &quot;conversao-geral&quot;],
+    &quot;visualizations&quot;: [&quot;funil-de-vendas&quot;, &quot;vendas-por-canal&quot;]
+  },
+  &quot;schedule_config&quot;: {
+    &quot;frequency_interval&quot;: 1,
+    &quot;frequency_unit&quot;: &quot;month&quot;,
+    &quot;month_day&quot;: 1,
+    &quot;time_start&quot;: &quot;08:00&quot;,
+    &quot;time_end&quot;: &quot;10:00&quot;,
+    &quot;destinatarios&quot;: [&quot;gestor@empresa.com&quot;, &quot;diretoria@empresa.com&quot;]
+  }
+}
+</code></pre>
+<h2 id="observacoes">Observações</h2>
+<ul>
+<li>O modelo de dados pode ser expandido para suportar funcionalidades futuras, como edição e histórico detalhado. </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

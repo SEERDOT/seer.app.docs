@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../home-frontend/">
+        <link rel="prev" href="../auth-frontend/">
       
       
-        <link rel="next" href="../pannel-frontend/">
+        <link rel="next" href="../report_app_frontend/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Página Login e Registro - seer.app docs</title>
+        <title>Página Painel - seer.app docs</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pagina-de-autenticacao" class="md-skip">
+        <a href="#pagina-painel-documentacao-tecnica" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Página Login e Registro
+              Página Painel
             
           </span>
         </div>
@@ -335,6 +335,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../auth-frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Login e Registro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -352,7 +375,7 @@
   
   
   <span class="md-ellipsis">
-    Página Login e Registro
+    Página Painel
     
   </span>
   
@@ -365,7 +388,7 @@
   
   
   <span class="md-ellipsis">
-    Página Login e Registro
+    Página Painel
     
   </span>
   
@@ -390,35 +413,95 @@
         <li class="md-nav__item">
   <a href="#1-visao-geral" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Visão geral
+      1. Visão Geral
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-hierarquia-de-templates" class="md-nav__link">
+  <a href="#2-anatomia-do-dom" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Hierarquia de templates
+      2. Anatomia do DOM
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Hierarquia de templates">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Componentes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Componentes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-base_authhtml" class="md-nav__link">
+  <a href="#31-breadcrumb" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1 base_auth.html
+      3.1 Breadcrumb
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-templates-filhos" class="md-nav__link">
+  <a href="#32-navegacao-de-setores" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2 Templates filhos
+      3.2 Navegação de Setores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Navegação de Setores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-isso-e-feito" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como isso é feito?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-filtros-globais" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Filtros Globais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-indicadores-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Indicadores (KPIs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Gráficos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-tooltips-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Tooltips KPI
     </span>
   </a>
   
@@ -430,78 +513,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-fluxo-de-login" class="md-nav__link">
+  <a href="#4-fluxo-de-interacoes" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Fluxo de Login
+      4. Fluxo de Interações
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-fluxo-de-registro" class="md-nav__link">
+  <a href="#5-estilos-relevantes" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Fluxo de Registro
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Fluxo de Registro">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#front-end-js-html5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Front-end (JS + HTML5):
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validacoes-em-tempo-real-nos-campos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Validações em Tempo Real nos campos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comportamento-do-botao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comportamento do Botão
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modais" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modais
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-fluxo-de-recuperacao-de-senha" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Fluxo de Recuperação de Senha
+      5. Estilos Relevantes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-fluxo-de-verificacao-de-email-2fa" class="md-nav__link">
+  <a href="#6-extensibilidade" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Fluxo de Verificação de Email (2FA)
+      6. Extensibilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Dependências
     </span>
   </a>
   
@@ -511,29 +552,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pannel-frontend/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Página Painel
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -955,35 +973,95 @@
         <li class="md-nav__item">
   <a href="#1-visao-geral" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Visão geral
+      1. Visão Geral
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-hierarquia-de-templates" class="md-nav__link">
+  <a href="#2-anatomia-do-dom" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Hierarquia de templates
+      2. Anatomia do DOM
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Hierarquia de templates">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Componentes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Componentes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-base_authhtml" class="md-nav__link">
+  <a href="#31-breadcrumb" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1 base_auth.html
+      3.1 Breadcrumb
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-templates-filhos" class="md-nav__link">
+  <a href="#32-navegacao-de-setores" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2 Templates filhos
+      3.2 Navegação de Setores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Navegação de Setores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-isso-e-feito" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como isso é feito?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-filtros-globais" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Filtros Globais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-indicadores-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Indicadores (KPIs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Gráficos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-tooltips-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Tooltips KPI
     </span>
   </a>
   
@@ -995,78 +1073,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-fluxo-de-login" class="md-nav__link">
+  <a href="#4-fluxo-de-interacoes" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Fluxo de Login
+      4. Fluxo de Interações
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-fluxo-de-registro" class="md-nav__link">
+  <a href="#5-estilos-relevantes" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Fluxo de Registro
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Fluxo de Registro">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#front-end-js-html5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Front-end (JS + HTML5):
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validacoes-em-tempo-real-nos-campos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Validações em Tempo Real nos campos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comportamento-do-botao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comportamento do Botão
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modais" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modais
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-fluxo-de-recuperacao-de-senha" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Fluxo de Recuperação de Senha
+      5. Estilos Relevantes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-fluxo-de-verificacao-de-email-2fa" class="md-nav__link">
+  <a href="#6-extensibilidade" class="md-nav__link">
     <span class="md-ellipsis">
-      6. Fluxo de Verificação de Email (2FA)
+      6. Extensibilidade
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dependencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Dependências
     </span>
   </a>
   
@@ -1088,220 +1124,228 @@
 
 
 
-<h1 id="pagina-de-autenticacao">Página de Autenticação</h1>
+<h1 id="pagina-painel-documentacao-tecnica">📊 Página <em>Painel</em> — Documentação Técnica</h1>
 <blockquote>
-<p>Essa é a documentação completa dos <strong>templates</strong> relacionados a login, registro, recuperação de senha e verificação de e‑mail da aplicação <strong>seer.app</strong>.</p>
+<p><strong>Contexto</strong>: a página <em>Painel</em> oferece uma visão consolidada dos setores <strong>Financeiro</strong> e <strong>Vendas</strong> da empresa. São exibidos KPIs, gráficos interativos e filtros de período, além de exportação para PDF.</p>
 </blockquote>
-<h2 id="1-visao-geral">1. Visão geral</h2>
-<p>O módulo de autenticação do front‑end é composto por <strong>cinco fluxos principais</strong>:</p>
-<ol>
-<li><strong>Login</strong>  </li>
-<li><strong>Cadastro de conta</strong>  </li>
-<li><strong>Recuperação / redefinição de senha</strong>  </li>
-<li><strong>Verificação de e‑mail (2FA)</strong>  </li>
-<li><strong>Exibição de Termos de Uso e Política de Privacidade</strong>  </li>
-</ol>
-<p>Todos os templates herdam de um layout base comum (<code>base_auth.html</code>), garantindo visual consistente e reutilização de código.</p>
 <hr />
-<h2 id="2-hierarquia-de-templates">2. Hierarquia de templates</h2>
-<pre><code>public_app/
-│
-├── base_auth.html          ← layout genérico (head, CSS, JS)
-├── login.html              ← form de login
-├── register.html           ← form de cadastro + modais de termos
-├── verify_email.html       ← inserção de código 2FA
-├── reset_password.html     ← solicitar link de reset
-├── set_new_password.html   ← definir nova senha
-├── reset_password_email.html (HTML de e‑mail)
-├── terms.html              ← modal Termos de Uso
-└── privacy-policy.html     ← modal Política de Privacidade
-</code></pre>
-<hr />
-<h3 id="21-base_authhtml">2.1 <code>base_auth.html</code></h3>
-<p>Arquivo que serve como base para a construção das páginas de login e registro. Possui as configurações básicas de um arquivo HTML e importa elementos necessários à construção dessa parte de autenticação.</p>
+<h2 id="1-visao-geral">1. Visão Geral</h2>
 <ul>
-<li><strong>Herança de layout –</strong> todos os demais templates estendem este arquivo com
-<code>{% extends 'public_app/base_auth.html' %}</code></li>
-<li>Define <strong>head</strong> com Bootstrap 5, Font Awesome, Google Fonts e folhas de estilo do projeto  </li>
-<li><code>{% block title %}</code> - título da aba/página, usado em <code>&lt;title&gt;</code>  </li>
-<li><code>{% block content %}</code> - onde o HTML específico de cada página será injetado</li>
+<li><strong>Templates</strong>: <code>financeiro_panel.html</code>, <code>vendas_panel.html</code></li>
+<li><strong>Estilos</strong>: <code>panel.css</code> (global), <code>panelVendas.css</code> (vendas)</li>
+<li><strong>Bibliotecas</strong>: Highcharts, <strong>jsPDF 2.5.1</strong>, <strong>html2canvas 1.4.1</strong>, Material Icons Outlined</li>
+<li><strong>Objetivo UX</strong>: leitura rápida de métricas, comparação temporal e compartilhamento de relatórios.</li>
 </ul>
 <hr />
-<h3 id="22-templates-filhos">2.2 Templates filhos</h3>
+<h2 id="2-anatomia-do-dom">2. Anatomia do DOM</h2>
+<pre><code class="language-text">.panel-container
+ ├─ .breadcrumb
+ ├─ .title-select-row
+ │   └─ .global-filter-container
+ ├─ .sectors-nav
+ ├─ .kpi-row (x2)
+ ├─ .graph-container           (linha/área)
+ ├─ .blank-containers
+ │   ├─ .blank-container (bar)
+ │   └─ .blank-container (pie/bar)
+ └─ #tooltips-container
+</code></pre>
+<p>Principais IDs para scripts/estilos:</p>
 <table>
 <thead>
 <tr>
-<th>Página</th>
-<th>Objetivo</th>
-<th>URL (reverse)</th>
-<th>Destaques</th>
+<th>ID</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>login.html</code></td>
-<td>Autenticar usuário existente</td>
-<td><code>public_app:login</code></td>
-<td>Campo único “identification” aceita <strong>email ou username</strong>; exibe mensagens do Django messages.</td>
+<td><code>global-filter-btn</code></td>
+<td>Abre dropdown de filtros globais</td>
 </tr>
 <tr>
-<td><code>register.html</code></td>
-<td>Criar nova conta</td>
-<td><code>public_app:register</code></td>
-<td>Validação JS de email, username, empresa e senha; exibe <strong>modais</strong> de termos/privacidade; inclui botão de exibir senha.</td>
+<td><code>global-filter-dropdown</code></td>
+<td>Container das <code>.filter-option</code></td>
 </tr>
 <tr>
-<td><code>verify_email.html</code></td>
-<td>2FA por código enviado por e‑mail</td>
-<td><code>public_app:verify_email</code></td>
-<td>Cinco inputs 1‑character com navegação automática; link para reenviar código.</td>
+<td><code>profit-chart</code></td>
+<td>Gráfico de faturamento</td>
 </tr>
 <tr>
-<td><code>reset_password.html</code></td>
-<td>Solicitar reset</td>
-<td><code>public_app:password_reset</code></td>
-<td>Validação de email em tempo real antes de habilitar envio.</td>
+<td><code>bar-chart</code></td>
+<td>Lucro bruto × líquido</td>
 </tr>
 <tr>
-<td><code>set_new_password.html</code></td>
-<td>Definir nova senha via token</td>
-<td><code>public_app:password_reset_confirm</code></td>
-<td>Dupla checagem de força + igualdade de senha.</td>
-</tr>
-<tr>
-<td><code>reset_password_email.html</code></td>
-<td>Corpo do e‑mail com link</td>
-<td>gerado pelo backend</td>
-<td>Layout responsivo em tabela HTML puro (compatível com clientes de e‑mail).</td>
-</tr>
-<tr>
-<td><code>terms.html</code> &amp; <code>privacy-policy.html</code></td>
-<td>Conteúdo jurídico exibido em modal</td>
-<td>n/a</td>
-<td>Abertos a partir de links na tela de cadastro; fecham via ícone ou clique fora.</td>
+<td><code>bar-chart-right</code></td>
+<td>Despesas por categoria</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="3-fluxo-de-login">3. Fluxo de Login</h2>
+<h2 id="3-componentes">3. Componentes</h2>
+<p>Cada componente abaixo cumpre um papel específico de <strong>usabilidade</strong> dentro do sistema.</p>
+<h3 id="31-breadcrumb">3.1 Breadcrumb</h3>
+<p><strong>Função:</strong> Orientar o usuário, mostrando em que parte da plataforma ele se encontra e permitindo voltar facilmente a níveis anteriores.</p>
+<p>Exibe caminho da aplicação; ícone inicial verde (<code>#23CE6B</code>).</p>
+<h3 id="32-navegacao-de-setores">3.2 Navegação de Setores</h3>
+<p><strong>Função:</strong> Permitir alternar rapidamente entre as visões Financeiro e Vendas sem recarregar toda a aplicação.</p>
+<p>Botões <code>.sector-item</code> redirecionam para <code>/panel/financeiro</code> ou <code>/panel/vendas</code>.<br />
+Classe <code>.selected</code> colore o botão ativo (fundo <code>#CDF8E8</code>, texto <code>#188C38</code>).</p>
+<h4 id="como-isso-e-feito">Como isso é feito?</h4>
 <ol>
 <li>
-<p><strong>GET <code>/login/</code></strong><br />
-   Renderiza o template <code>login.html</code>.</p>
+<p><strong>URL pattern</strong> — <code>/client/panel/&lt;sector&gt;</code> mapeia para a <em>view</em> <code>panel(sector)</code>.</p>
 </li>
 <li>
-<p><strong>POST <code>/login/</code></strong><br />
-   Envia credenciais para a view <code>public_app:login</code>.</p>
+<p>A view carrega o contexto adequado (KPIs, datasets) e decide qual <em>partial</em> incluir:</p>
 </li>
 <li>
-<p><strong>Autenticação</strong>  </p>
-</li>
-<li>O backend tenta autenticar usando <strong>username</strong> ou <strong>email</strong> + <strong>senha</strong>.  </li>
-<li>Em caso de sucesso, redireciona para a área logada.  </li>
-<li>
-<p>Em caso de erro, adiciona mensagem em <code>django.contrib.messages</code>.</p>
+<p><code>financeiro_panel.html</code> ou <code>vendas_panel.html</code>.</p>
 </li>
 <li>
-<p><strong>Exibição de feedback</strong>  </p>
+<p>Ambos os parciais <strong>estendem o mesmo <code>base.html</code></strong> e compartilham o CSS global, portanto apenas a seção interna muda; os assets não são baixados de novo graças ao cache do navegador.</p>
 </li>
-<li>Mensagens de erro/sucesso exibidas no topo com classes Bootstrap (<code>alert-danger</code>, <code>alert-success</code>).  </li>
-<li>O botão <strong>Entrar</strong> permanece estático, sem spinner.</li>
+<li>
+<p>Resultado: há, tecnicamente, um <em>full-page reload</em>, mas com latência mínima e sem “flash” de layout, o que faz a navegação parecer instantânea.</p>
+</li>
 </ol>
-<blockquote>
-<p><strong>Regras de UX</strong><br />
-- Link “Criar uma conta” → <code>/register/</code><br />
-- Link “Esqueci minha senha” → <code>/password-reset/</code></p>
-</blockquote>
+<h3 id="33-filtros-globais">3.3 Filtros Globais</h3>
+<p><strong>Função:</strong> Restringir o período de análise de <strong>todos</strong> os KPIs e gráficos simultaneamente, garantindo leituras consistentes.</p>
+<p>Dropdown controlado por <code>global-filter-btn</code>. Cada <code>&lt;li class="filter-option"&gt;</code> possui <code>data-months</code> (1, 3, 6, 12).<br />
+Evento <code>click</code> dispara atualização de KPIs e gráficos.</p>
+<pre><code class="language-html">&lt;li class=&quot;filter-option&quot; data-months=&quot;6&quot;&gt;Últimos 6 meses&lt;/li&gt;
+</code></pre>
+<h3 id="34-indicadores-kpis">3.4 Indicadores (KPIs)</h3>
+<p><strong>Função:</strong> Apresentar métricas‑chave em formato reduzido, permitindo uma varredura rápida de performance sem abrir relatórios completos.</p>
+<p>Estrutura típica:</p>
+<pre><code class="language-html">&lt;div class=&quot;kpi-container&quot;&gt;
+  &lt;div class=&quot;kpi-header&quot;&gt;
+    &lt;span&gt;Faturamento Total&lt;/span&gt;
+    &lt;i class=&quot;material-icons-outlined help-icon&quot;&gt;help_outline&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;kpi-value&quot;&gt;R$ 2.300.000&lt;/div&gt;
+  &lt;div class=&quot;kpi-change up&quot;&gt;
+    &lt;i class=&quot;material-icons-outlined&quot;&gt;trending_up&lt;/i&gt;&lt;span&gt;+5%&lt;/span&gt;
+    &lt;span class=&quot;compareText&quot;&gt;vs. mês passado&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li>Classes <code>.up</code> / <code>.down</code> definem cor verde ou vermelha (panel.css).</li>
+<li>Tooltip agregado ao ícone <code>help-icon</code> (ver § 4.6).</li>
+</ul>
+<h3 id="35-graficos">3.5 Gráficos</h3>
+<p><strong>Função:</strong> Visualizar tendências e comparações ao longo do tempo ou entre categorias, transformando números em insights visuais.</p>
+<p>Cada gráfico fica dentro de <code>.graph-container</code> ou <code>.blank-container</code> com header:</p>
+<pre><code class="language-html">&lt;div class=&quot;graph-header&quot;&gt;
+  &lt;h2&gt;Receita Mensal&lt;/h2&gt;
+  &lt;div class=&quot;graph-controls&quot;&gt;
+    &lt;select class=&quot;period-select&quot;&gt;Mensal&lt;/select&gt;
+    &lt;button class=&quot;share-btn&quot;&gt;&lt;i class=&quot;material-icons-outlined&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;profit-chart&quot;&gt;&lt;/div&gt;
+</code></pre>
+<p>Scripts Highcharts leem dados de <code>window.profitChartData</code> etc.</p>
+<h3 id="36-tooltips-kpi">3.6 Tooltips KPI</h3>
+<p><strong>Função:</strong> Fornecer explicações rápidas sobre o cálculo ou significado dos KPIs, sem desviar o usuário para outra página.</p>
+<p>Tooltips estão em <code>#tooltips-container .tooltip</code>. JS vincula cada <code>.help-icon</code> ao tooltip correspondente:</p>
+<pre><code class="language-css">.tooltip { opacity:0; transition:opacity .2s; }
+.tooltip.visible { opacity:1; }
+</code></pre>
 <hr />
-<h2 id="4-fluxo-de-registro">4. Fluxo de Registro</h2>
-<h3 id="front-end-js-html5">Front-end (JS + HTML5):</h3>
-<h3 id="validacoes-em-tempo-real-nos-campos">Validações em Tempo Real nos campos</h3>
+<h2 id="4-fluxo-de-interacoes">4. Fluxo de Interações</h2>
+<table>
+<thead>
+<tr>
+<th>Interação</th>
+<th>Elemento</th>
+<th>Lógica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Filtro global</strong></td>
+<td><code>.filter-option</code></td>
+<td>Atualiza <code>currentFilter</code>; fetch no backend; re-render KPIs/gráficos</td>
+</tr>
+<tr>
+<td><strong>Filtro local</strong></td>
+<td><code>.period-select</code> ou <code>.time-option</code></td>
+<td>Atualiza apenas o gráfico dentro do contêiner</td>
+</tr>
+<tr>
+<td><strong>Exportar PDF</strong></td>
+<td><code>.share-btn</code></td>
+<td><code>generateChartPDF(id,title)</code> → html2canvas → jsPDF.save</td>
+</tr>
+<tr>
+<td><strong>Tooltip</strong></td>
+<td><code>.help-icon</code> mouseenter</td>
+<td>Adiciona classe <code>.visible</code> ao tooltip correspondente</td>
+</tr>
+</tbody>
+</table>
+<p>Trecho da função de exportação:</p>
+<pre><code class="language-js">function generateChartPDF(containerId, title){
+  html2canvas(document.getElementById(containerId)).then(canvas=&gt;{
+    const pdf = new jsPDF('p','mm','a4');
+    pdf.addImage(canvas,'PNG',10,10,190,90);
+    pdf.save(`${title}-${new Date().toISOString().slice(0,10)}.pdf`);
+  });
+}
+</code></pre>
+<hr />
+<h2 id="5-estilos-relevantes">5. Estilos Relevantes</h2>
+<p><code>panel.css</code> (GLOBAL):</p>
+<pre><code class="language-css">.kpi-container     { background:#fff;border-radius:8px;padding:20px; }
+.kpi-change.up     { color:#23CE6B; }
+.kpi-change.down   { color:#B3261E; }
+.sector-item       { cursor:pointer;padding:8px 16px;border-radius:5px; }
+.sector-item:hover { background:#CDF8E8; }
+.share-btn:hover   { background:#CDF8E8;color:#188C48; }
+</code></pre>
+<p><code>panelVendas.css</code> (Vendas):</p>
+<pre><code class="language-css">.sector-item.vendas.selected { background:#A8C9FF;color:#2384CE; }
+</code></pre>
+<hr />
+<h2 id="6-extensibilidade">6. Extensibilidade</h2>
 <ul>
-<li><strong>Email</strong>: <ul>
-<li>Validação via atributo <code>pattern</code> do HTML5.</li>
-</ul>
-</li>
-<li><strong>Username</strong>:  <ul>
-<li>5–150 caracteres  </li>
-<li>Caracteres permitidos: letras, números, <code>_</code>, <code>@</code>, <code>+</code>, <code>.</code>, <code>-</code>.</li>
-</ul>
-</li>
-<li><strong>Empresa</strong>:  <ul>
-<li>Campo não pode estar vazio.</li>
-</ul>
-</li>
-<li><strong>Senha</strong>:<br />
-Requisitos mínimos:<ul>
-<li>8+ caracteres  </li>
-<li>1 letra maiúscula  </li>
-<li>1 letra minúscula  </li>
-<li>1 dígito numérico  </li>
-<li>1 caractere especial  </li>
-</ul>
-</li>
-</ul>
-<h3 id="comportamento-do-botao">Comportamento do Botão</h3>
-<ul>
-<li>Botão <strong>"Criar"</strong> permanece desabilitado até que:</li>
-<li>Todos os campos atendam aos requisitos de validação.</li>
-<li>Checkbox de aceite (Termos de Uso + Política de Privacidade) esteja marcado.</li>
-</ul>
-<h3 id="modais">Modais</h3>
-<ul>
-<li><strong>Termos de Uso</strong>:<br />
-  Abre <code>terms.html</code> ao clicar no link correspondente.</li>
-<li><strong>Política de Privacidade</strong>:<br />
-  Abre <code>privacy-policy.html</code> ao clicar no link correspondente.</li>
+<li><strong>Novos KPIs</strong>: adicionar entrada no dicionário <code>kpis</code> (context) e clonar <code>.kpi-container</code>.  </li>
+<li><strong>Novos gráficos</strong>: criar <code>&lt;div id="new-chart"&gt;&lt;/div&gt;</code> + script Highcharts + botão share.  </li>
+<li><strong>Novos filtros</strong>: inserir novo <code>&lt;li class="filter-option"&gt;</code> e tratar no backend.</li>
 </ul>
 <hr />
-<h2 id="5-fluxo-de-recuperacao-de-senha">5. Fluxo de Recuperação de Senha</h2>
-<ol>
-<li>
-<p><strong>GET <code>/password-reset/</code></strong><br />
-   Renderiza <code>reset_password.html</code>.</p>
-</li>
-<li>
-<p><strong>POST <code>/password-reset/</code></strong>  </p>
-</li>
-<li>Validação frontend: email via regex <code>^[^\s@]+@[^\s@]+\.[^\s@]+$</code>  </li>
-<li>Botão desabilitado até email válido  </li>
-<li>
-<p>Envia e-mail com link usando template <code>reset_password_email.html</code></p>
-</li>
-<li>
-<p><strong>Redefinição de senha</strong>  </p>
-</li>
-<li>Link direciona para <code>/password-reset-confirm/&lt;uidb64&gt;/&lt;token&gt;/</code>  </li>
-<li>Renderiza <code>set_new_password.html</code>  </li>
-<li>Validações:  <ul>
-<li>Força da senha (mesmas regras do registro)  </li>
-<li>Confirmação deve ser idêntica  </li>
-</ul>
-</li>
-<li>Ícone de visibilidade para ambas as senhas</li>
-</ol>
-<h2 id="6-fluxo-de-verificacao-de-email-2fa">6. Fluxo de Verificação de Email (2FA)</h2>
-<ol>
-<li>
-<p><strong>GET <code>/verify-email/</code></strong><br />
-   Renderiza <code>verify_email.html</code> após registro</p>
-</li>
-<li>
-<p><strong>Lógica de inputs</strong>:</p>
-</li>
-<li>5 campos de 1 caractere com navegação automática</li>
-<li>Preenchimento automático ao digitar</li>
-<li>
-<p>Backspace volta ao campo anterior</p>
-</li>
-<li>
-<p><strong>Links de fallback</strong>:</p>
-</li>
-<li>"Reenviar código": <code>/resend-verification-email/</code></li>
-<li>"Editar email": retorna ao registro</li>
-</ol>
+<h2 id="7-dependencias">7. Dependências</h2>
+<table>
+<thead>
+<tr>
+<th>Biblioteca</th>
+<th>Finalidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Highcharts</strong></td>
+<td>Renderização de linhas, barras, pizza</td>
+</tr>
+<tr>
+<td><strong>jsPDF</strong> 2.5.1</td>
+<td>Criação de PDF</td>
+</tr>
+<tr>
+<td><strong>html2canvas</strong> 1.4.1</td>
+<td>Screenshot DOM</td>
+</tr>
+<tr>
+<td><strong>Material Icons</strong></td>
+<td>Ícones de interface</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <blockquote>
-<p><strong>Última atualização:</strong> 02 jul 2025</p>
+<p><strong>Última atualização:</strong> 06 jul 2025</p>
 </blockquote>
 
 
