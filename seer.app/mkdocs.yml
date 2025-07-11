@@ -12,6 +12,9 @@ nav:
       - Página Notificações: frontend/notifications-frontend.md
       - Página Configurações: frontend/settings-frontend.md
       - Página Suporte: frontend/support-frontend.md
+      - Página Insights: frontend/insights-frontend.md
+      - Onboarding: frontend/onboarding-frontend.md
+
 
   - Back-End:
       - Configurações: backend/settings.md
