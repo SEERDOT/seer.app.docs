@@ -1,4 +1,4 @@
-# Modal de Ajuda - Documentação Front-End
+# Documentação Modal de Ajuda
 
 ## Tabela de Conteúdo
 

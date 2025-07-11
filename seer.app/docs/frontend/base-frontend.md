@@ -1,5 +1,5 @@
 
-# 📘 `base.md` — Documentação de Elementos Base do Sistema
+# Documentação de Elementos Base do Sistema
 
 ## 🧩 O que é uma Base no Sistema?
 

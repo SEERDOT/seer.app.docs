@@ -1,4 +1,4 @@
-# Página de Autenticação
+# Documentação da Página de Autenticação
 
 > Essa é a documentação completa dos **templates** relacionados a login, registro, recuperação de senha e verificação de e‑mail da aplicação **seer.app**.
 

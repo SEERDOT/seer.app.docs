@@ -361,15 +361,17 @@ Sua função principal é:
 ### 4.4 Comportamento e Navegação
 
 - Cada item da lista redireciona o usuário para a rota da respectiva preferência:
-  | Item                 | Rota                                 | Observação                     |
-  |----------------------|--------------------------------------|--------------------------------|
-  | Geral                | `/client/preferencias/geral`         | Preferência organizacional     |
-  | Planos e Pagamentos  | `/client/preferencias/planos-e-pagamentos` | Relacionado a billing          |
-  | Privacidade          | `/client/preferencias/privacidade`   | Políticas e controle de dados  |
-  | Perfil               | `client_app:client_profile_preferences` | Preferência do usuário logado  |
-  | Notificações         | `client_app:notifications`           | Notificações e alertas         |
 
-- O destaque visual do item ativo é controlado pelo Django com `request.resolver_match.url_name`.
+| Item                | Rota                                                | Observação                          |
+|---------------------|-----------------------------------------------------|-------------------------------------|
+| **Geral**           | `/client/preferencias/geral`                        | Preferências organizacionais        |
+| **Planos e Pagamentos** | `/client/preferencias/planos-e-pagamentos`      | Relacionado a billing               |
+| **Privacidade**     | `/client/preferencias/privacidade`                  | Políticas e controle de dados       |
+| **Perfil**          | `client_app:client_profile_preferences`             | Preferências do usuário logado      |
+| **Notificações**    | `client_app:notifications`                          | Alertas, avisos e preferências push |
+
+- O destaque visual do item ativo é controlado pelo Django via  
+  `request.resolver_match.url_name`.
 
 ---
 

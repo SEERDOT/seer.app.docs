@@ -1,4 +1,4 @@
-# Página Home
+# Documentação da Página Home
 
 > Essa é a documentação completa dos **templates** relacionados à página inicial (Home) da aplicação **seer.app**.
 

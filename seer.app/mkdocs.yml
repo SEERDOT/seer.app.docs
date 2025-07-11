@@ -8,7 +8,10 @@ nav:
       - Componentes: frontend/components-frontend.md
       - Página Home: frontend/home-frontend.md
       - Página Login e Registro: frontend/auth-frontend.md
-      - Página Painél: frontend/dashboard-fronted.md
+      - Página Painél: frontend/pannel-frontend.md
+      - Página Notificações: frontend/notifications-frontend.md
+      - Página Configurações: frontend/settings-frontend.md
+      - Página Suporte: frontend/support-frontend.md
 
   - Back-End:
       - Configurações: backend/settings.md

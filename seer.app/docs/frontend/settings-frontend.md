@@ -1,4 +1,4 @@
-# Configurações e Preferências - Documentação Frontend
+# Documentação Configurações e Preferências
 
 ## Tabela de Conteúdo
 

@@ -1,5 +1,5 @@
 
-# 📊 Página *Painel* — Documentação Técnica
+# Documentação Página *Painel* 
 
 > **Contexto**: a página *Painel* oferece uma visão consolidada dos setores **Financeiro** e **Vendas** da empresa. São exibidos KPIs, gráficos interativos e filtros de período, além de exportação para PDF.
 

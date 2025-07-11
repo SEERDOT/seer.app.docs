@@ -1,4 +1,4 @@
-# Página **Notificações** – Documentação Front-End  
+# Documentação Página Notificações   
 
 
 ## 1. Visão geral
